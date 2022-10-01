@@ -131,7 +131,7 @@
             "__type__": "Note",
             "fields": [
                 "MRR",
-                "<a>Mean\n Reciprocal Rank. Hvor høyt på en topp-k liste befinner relevante treff \nseg? Godt egnet når man er mest opptatt av å finne relevante treff i en \ntopp-k resultatliste. <br><br>For alle spørringer: $\\frac 1 {\\text{Posisjon til første relevante treff}}$<br><br>Ta gjennomsnitt av disse.</a>"
+                "Mean\n Reciprocal Rank. Hvor høyt på en topp-k liste befinner relevante treff \nseg? Godt egnet når man er mest opptatt av å finne relevante treff i en \ntopp-k resultatliste. <br><br>For alle spørringer: $\\frac 1 {\\text{Posisjon til første relevante treff}}$<br><br>Ta gjennomsnitt av disse."
             ],
             "guid": "zo4[DEkAD}",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -141,7 +141,7 @@
             "__type__": "Note",
             "fields": [
                 "MAP",
-                "<a>Mean Average Precision. <br><br>Snittpresisjon av én spørring, deretter presisjon av flere spørringer.</a>"
+                "Mean Average Precision. <br><br>Snittpresisjon av én spørring, deretter presisjon av flere spørringer."
             ],
             "guid": "dRa3x3UARa",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -150,8 +150,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "<a>Precision</a>",
-                "<a>Relevante gjenfunnet / antall gjenfunnet<br><br>Andel gjenfunnet som er relevante<br><br>Precision &amp; recall brukes alltid sammen.</a>"
+                "Precision",
+                "Relevante gjenfunnet / antall gjenfunnet<br><br>Andel gjenfunnet som er relevante<br><br>Precision &amp; recall brukes alltid sammen."
             ],
             "guid": "Olz}$@>el",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -160,8 +160,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "<a>Recall</a>",
-                "<a>$\\frac {\\text{Relevante gjenfunnet}}&nbsp; {\\text{antall relevante}}$<br><br>Andel av relevante som er gjenfunnet<br><br>Precision &amp; recall brukes alltid sammen.</a>"
+                "Recall",
+                "$\\frac {\\text{Relevante gjenfunnet}}&nbsp; {\\text{antall relevante}}$<br><br>Andel av relevante som er gjenfunnet<br><br>Precision &amp; recall brukes alltid sammen."
             ],
             "guid": "D^AcI8d!]n",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -170,8 +170,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "<a>Hvorfor evaluere IR-systemer?</a>",
-                "<a>• Møter systemet brukerens behov, finner systemet relevante dokumenter. <br><br>• Sammenligne med andre systemer</a>"
+                "Hvorfor evaluere IR-systemer?",
+                "• Møter systemet brukerens behov, finner systemet relevante dokumenter. <br><br>• Sammenligne med andre systemer"
             ],
             "guid": "wi=_YA%?ib",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -180,8 +180,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "<a>Hvordan evaluere IR-systemer?</a>",
-                "<a>• Gitt samling med dokumenter, lag et sett med spørringer og fasit (evt. bruk TREC).<br><br>• Gjør spørringer for ulike systemer <br>¨<br>• Regn ut valgt metrikk</a>"
+                "Hvordan evaluere IR-systemer?",
+                "• Gitt samling med dokumenter, lag et sett med spørringer og fasit (evt. bruk TREC).<br><br>• Gjør spørringer for ulike systemer <br>¨<br>• Regn ut valgt metrikk"
             ],
             "guid": "qNAz*mdwxC",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -190,8 +190,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "<a>Evalueringsmål</a>",
-                "<a>• Precision &amp; recall<br><br>• MAP<br><br>• MRR<br><br>• F-measure<br><br>• E-measure<br><br>• P@N<br><br>• R-precision<br><br>Brukerorienterte:<br><br>• Novelty <br><br>• Coverage</a>"
+                "Evalueringsmål",
+                "• Precision &amp; recall<br><br>• MAP<br><br>• MRR<br><br>• F-measure<br><br>• E-measure<br><br>• P@N<br><br>• R-precision<br><br>Brukerorienterte:<br><br>• Novelty <br><br>• Coverage"
             ],
             "guid": "Iyb*%xtY>t",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -200,8 +200,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "<a>TREC</a>",
-                "<a>TREC er en konferanse, til hver konferanse utvikles et standardsett med dokumenter og spørringer (med fasit). <br><br>Tilbyr tekstsamlinger og infrastruktur for evaluering av IR-systemer. <br><br>Kan teste mot en fasit og evalueringsmetrikker, gjør det lettere å sammenligne.</a>"
+                "TREC",
+                "TREC er en konferanse, til hver konferanse utvikles et standardsett med dokumenter og spørringer (med fasit). <br><br>Tilbyr tekstsamlinger og infrastruktur for evaluering av IR-systemer. <br><br>Kan teste mot en fasit og evalueringsmetrikker, gjør det lettere å sammenligne."
             ],
             "guid": "vq/Bn8tNP5",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -210,8 +210,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "<a>Precision og recall i Web-søk</a>",
-                "<a>Kjenner ikke antall relevante, så kan ikke beregne recall.</a>"
+                "Precision og recall i Web-søk",
+                "Kjenner ikke antall relevante, så kan ikke beregne recall."
             ],
             "guid": "cLOW=?},4y",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -220,8 +220,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "<a>Brukerorienterte mål</a>",
-                "<a>Coverage: Finner de relevante brukeren forventer<br><br>Novelty: Finner nye, relevante for brukeren</a>"
+                "Brukerorienterte mål",
+                "Coverage: Finner de relevante brukeren forventer<br><br>Novelty: Finner nye, relevante for brukeren"
             ],
             "guid": "FH7G+V-}Xd",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -230,8 +230,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "<a>Fordeler ved Lucene</a>",
-                "<a>Støtter rask indeksering og søk, samt de standard tekstoperasjonene.</a>"
+                "Fordeler ved Lucene",
+                "Støtter rask indeksering og søk, samt de standard tekstoperasjonene."
             ],
             "guid": "v%cak0/f&z",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -240,8 +240,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "<a>Hovedkonsept med IR-system</a>",
-                "<a>Representasjon, lagring, organisering og aksessering av informasjon.</a>"
+                "Hovedkonsept med IR-system",
+                "Representasjon, lagring, organisering og aksessering av informasjon."
             ],
             "guid": "cvg}tdMGH{",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -250,8 +250,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "<a>Hva er en query?</a>",
-                "<a>Oversettelse av brukerens behov til en mengde av nøkkelord.</a>"
+                "Hva er en query?",
+                "Oversettelse av brukerens behov til en mengde av nøkkelord."
             ],
             "guid": "sWuG:aFp[C",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -260,8 +260,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "<a>Datagjenfinning vs. informasjonsgjenfinning</a>",
-                "<a>IR: Delvis match, ranking og søk i ustrukturert data. Spørrespråk er natulig språk. Tolererer noe feil. Relevans. <br><br>DR: Som oppslag i database, høy struktur, full match, ingen rangering, veldig deterministisk. DR subset of IR.</a>"
+                "Datagjenfinning vs. informasjonsgjenfinning",
+                "IR: Delvis match, ranking og søk i ustrukturert data. Spørrespråk er natulig språk. Tolererer noe feil. Relevans. <br><br>DR: Som oppslag i database, høy struktur, full match, ingen rangering, veldig deterministisk. DR subset of IR."
             ],
             "guid": "HpluC0M4Mn",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -270,8 +270,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "<a>Ranking</a>",
-                "<a>En rangering av retrieved dokumenter som forhåpentligvis representerer relevansen mtp. spørringen.</a>"
+                "Ranking",
+                "En rangering av retrieved dokumenter som forhåpentligvis representerer relevansen mtp. spørringen."
             ],
             "guid": "J9WfH]>HGj",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -280,8 +280,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "<a>TF-IDF</a>",
-                "<a>TF: Termfrekvens<br><br>IDF: Invers dokument frekvens = log(N)/df<br><br>Forteller hvor viktig og unikt en term er i samlingen, bidrar til høy diskrimineringsgrad.</a>"
+                "TF-IDF",
+                "TF: Termfrekvens<br><br>IDF: Invers dokument frekvens = log(N)/df<br><br>Forteller hvor viktig og unikt en term er i samlingen, bidrar til høy diskrimineringsgrad."
             ],
             "guid": "OGc,S]eZAS",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -290,8 +290,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "<a>Edit distance</a>",
-                "<a>Antall operasjoner av (slett, bytt og legg til) som kreves for å få to ord like.</a>"
+                "Edit distance",
+                "Antall operasjoner av (slett, bytt og legg til) som kreves for å få to ord like."
             ],
             "guid": "KQ890C>CoP",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -300,8 +300,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "<a>Indeksterm</a>",
-                "<a>Term\n som blir valgt for å representere et dokument. Velg termer som sier noe\n om innholdet og som bidrar til høy diskrimineringsgrad.</a>"
+                "Indeksterm",
+                "Term\n som blir valgt for å representere et dokument. Velg termer som sier noe\n om innholdet og som bidrar til høy diskrimineringsgrad."
             ],
             "guid": "mv{D_,6-T=",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -310,7 +310,7 @@
         {
             "__type__": "Note",
             "fields": [
-                "<a>Valg av indeksterm</a>",
+                "Valg av indeksterm",
                 "Kan velges av ekspert: <br><br>• Fordeler: Domenekunnskap, vet hvilke som bør indekseres og kan vekte dem. <br><br>• Ulemper: Subjektivitet, mangel på effektivit, kostnad ved manuelt arbeid. <br><br>Kriterier for valg: <br><br>• Skal være dekkende for innholdet og representere innholdet, høyest mulig diskrimineringsgrad, er også plassbesparende."
             ],
             "guid": "f#[{u%+ug_",
@@ -320,8 +320,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "<a>Indekseringsmåter</a>",
-                "<a>• Invertert indeks (effektiv, lavt krav til lagring)<br><br>•\n Suffix tre (høy overhead, men effektiv for små samlinger, easier to \nsearch for substrings but they have large space requirements)<br><br>• Signaturfil (kan gå tom for hashkode ved store samlinger, men effektiv for små, sekvensielt søk)<br><br>• Suffix array (Mange random disk access når arrayet blir stor)</a>"
+                "Indekseringsmåter",
+                "• Invertert indeks (effektiv, lavt krav til lagring)<br><br>•\n Suffix tre (høy overhead, men effektiv for små samlinger, easier to \nsearch for substrings but they have large space requirements)<br><br>• Signaturfil (kan gå tom for hashkode ved store samlinger, men effektiv for små, sekvensielt søk)<br><br>• Suffix array (Mange random disk access når arrayet blir stor)"
             ],
             "guid": "i+W(w&QjoG",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -330,7 +330,7 @@
         {
             "__type__": "Note",
             "fields": [
-                "<a>Signaturfil</a>",
+                "Signaturfil",
                 "* Hashfunksjon<br><br>* Blokkstørrelse<br><br>* Signatur for hver blokk"
             ],
             "guid": "Q6F*o_lJTM",
@@ -340,8 +340,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "<a>Hvorfor indeksere?</a>",
-                "<a>Det går raskere, har et oppslag å søke i, i stedet for teksten hver gang.</a>"
+                "Hvorfor indeksere?",
+                "Det går raskere, har et oppslag å søke i, i stedet for teksten hver gang."
             ],
             "guid": "MSXw8#6^M3",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -350,8 +350,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "<a>Suffix trie vs. vocabulary trie</a>",
-                "<a>Suffix trie er i seg selv en indekseringsmetode mens vocabulary trie brukes i forbindelse med<br>konstruksjonen av indeks i \"inverted index\"-indekseringsmetoden.<br><br>Vocabulary trie lager vi basert på \"term occurrencies\" og må ha med termene (vocabulary)</a>"
+                "Suffix trie vs. vocabulary trie",
+                "Suffix trie er i seg selv en indekseringsmetode mens vocabulary trie brukes i forbindelse med<br>konstruksjonen av indeks i \"inverted index\"-indekseringsmetoden.<br><br>Vocabulary trie lager vi basert på \"term occurrencies\" og må ha med termene (vocabulary)"
             ],
             "guid": "xZS;ugpz@e",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -360,7 +360,7 @@
         {
             "__type__": "Note",
             "fields": [
-                "<a>Suffix array vs. suffix tree</a>",
+                "Suffix array vs. suffix tree",
                 "I\n array'et listes opp kun der termene som skal indekseres dukker opp \n(occurences), mens i treet skal førstebokstaven i hver term være med \nsammen med occurences. <br><br>På grunn av dette tar array'et mindre plass enn treet.<br><br>Prinsippet\n med begge indekseringsmetodene er basert på at en tekst sees på som en \nlang streng, hvor hver ordposisjon i teksten er suffiks av strengen. \nSuffikstreet og suffiks arrayet er bygd basert på alle suffiksene i \ntreet med startposisjon av suffiksene som \"occurences\". Hver posisjon \npeker på hver suffiks."
             ],
             "guid": "p{[pgCRK>}",
@@ -370,8 +370,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "<a>Semantic gap i IR</a>",
-                "<a>Avstand\n mellom høy-nivå-konsepter og lav-nivå visuelle features. Lite gap \nmellom tabell og meningen, større avstand mellom et dokument og den \noverordnende meningen til dokumentet. Stort avstand mellom bilde-feature\n og semantikkene til bildet.</a>"
+                "Semantic gap i IR",
+                "Avstand\n mellom høy-nivå-konsepter og lav-nivå visuelle features. Lite gap \nmellom tabell og meningen, større avstand mellom et dokument og den \noverordnende meningen til dokumentet. Stort avstand mellom bilde-feature\n og semantikkene til bildet."
             ],
             "guid": "I!-=B!R,No",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -380,8 +380,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "<a>TBIR vs. CBIR</a>",
-                "<a>TBIR:\n query is a text and serach performed over text sourrounding images. \nIndex based on text. CBIR: query by example (quesry is an image). Index \nby raw content of the images (features)</a>"
+                "TBIR vs. CBIR",
+                "TBIR:\n query is a text and serach performed over text sourrounding images. \nIndex based on text. CBIR: query by example (quesry is an image). Index \nby raw content of the images (features)"
             ],
             "guid": "Oxkh6$0*k/",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -390,8 +390,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "<a>Fordel med fargehistogram</a>",
-                "<a>Advantages: Color histogram independent from image resolution.<br><br>Drawback: Quantization effect</a>"
+                "Fordel med fargehistogram",
+                "Advantages: Color histogram independent from image resolution.<br><br>Drawback: Quantization effect"
             ],
             "guid": "K$3nfr~QP-",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -400,7 +400,7 @@
         {
             "__type__": "Note",
             "fields": [
-                "<a>Steg i bruk av fargehistogram</a>",
+                "Steg i bruk av fargehistogram",
                 "1 - selection of a color space,<br><br>2 - quantization of the color space, <br><br>3 - computation of histograms,<br><br>4 - derivation of the histogram distance function,<br><br>5 - identification of indexing shortcuts"
             ],
             "guid": "lsrGb^XZZ)",
@@ -410,8 +410,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "<a>Feature</a>",
-                "<a>Feature\n er noe som best representer og/eller karakteriserer et media objekt ifm\n innholdsbasertgjenfinning av multimedia informasjon. Dette kan være \nfarger, fargehistogram, form (shape), og texture for bilder. For video \nkan dette være R-frame, objekter, bevegelsesinformasjon, \ntekstannotering, osv.</a>"
+                "Feature",
+                "Feature\n er noe som best representer og/eller karakteriserer et media objekt ifm\n innholdsbasertgjenfinning av multimedia informasjon. Dette kan være \nfarger, fargehistogram, form (shape), og texture for bilder. For video \nkan dette være R-frame, objekter, bevegelsesinformasjon, \ntekstannotering, osv."
             ],
             "guid": "pZg,D*weWs",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -420,8 +420,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "<a>Fordeler og ulemper boolean model</a>",
-                "<a>Basert\n på at den ikke rangerer søkeresultater men bruker \"full match\", kan det\n diskuteres om boolske modellen egentlig er en IR-modell. Vanskelig for \nbrukere å formulere spørringer. <br>Returnerer for mange eller for få.</a>"
+                "Fordeler og ulemper boolean model",
+                "Basert\n på at den ikke rangerer søkeresultater men bruker \"full match\", kan det\n diskuteres om boolske modellen egentlig er en IR-modell. Vanskelig for \nbrukere å formulere spørringer. <br>Returnerer for mange eller for få."
             ],
             "guid": "zfBqL@J&!E",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -430,7 +430,7 @@
         {
             "__type__": "Note",
             "fields": [
-                "<a>Language model vs. probabilistic model</a>",
+                "Language model vs. probabilistic model",
                 "Begge basert på sannsynlighet. <br><br>PM: $P(R | q, d)$<br><br>LM: $P(q | {\\text{dokumentmodellen}})$<br><br>Hovedproblemet med LM er:<br>- LM antar at det er likhet mellom dokument og informasjon. Dette er i seg selv en svakhet<br>- LM baserer seg på en veldig forenkling av språkmodellen<br>- Vanskeligere å bruke URF enn i PM<br>Vanskeligere å integrere frasesøk, spørsmål og svar spørringer, og boolsksøk."
             ],
             "guid": "L.J_5~u:K`",
@@ -440,8 +440,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "<a>Forklar Cosinus likhetsfunksjonen</a>",
-                "<a>Likhetsfunksjon\n som benyttes av vector space modellen. Finner likhet mellom spørring og\n et dokument basert på cosinus-verdien av vinkelen mellom vektorene av \nvektene for disse to.</a>"
+                "Forklar Cosinus likhetsfunksjonen",
+                "Likhetsfunksjon\n som benyttes av vector space modellen. Finner likhet mellom spørring og\n et dokument basert på cosinus-verdien av vinkelen mellom vektorene av \nvektene for disse to."
             ],
             "guid": "c[86qznqwQ",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
