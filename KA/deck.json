@@ -1,0 +1,523 @@
+{
+    "__type__": "Deck",
+    "children": [],
+    "crowdanki_uuid": "914b4566-4156-11ed-a206-31bf9b4e6d91",
+    "deck_config_uuid": "04e00f86-4155-11ed-a206-31bf9b4e6d91",
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig",
+            "autoplay": true,
+            "buryInterdayLearning": false,
+            "crowdanki_uuid": "04e00f86-4155-11ed-a206-31bf9b4e6d91",
+            "dyn": false,
+            "interdayLearningMix": 0,
+            "lapse": {
+                "delays": [
+                    10.0
+                ],
+                "leechAction": 1,
+                "leechFails": 8,
+                "minInt": 1,
+                "mult": 0.0
+            },
+            "maxTaken": 60,
+            "name": "Default",
+            "new": {
+                "bury": false,
+                "delays": [
+                    1.0,
+                    10.0
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    1,
+                    4,
+                    0
+                ],
+                "order": 1,
+                "perDay": 20
+            },
+            "newGatherPriority": 0,
+            "newMix": 0,
+            "newPerDayMinimum": 0,
+            "newSortOrder": 0,
+            "replayq": true,
+            "rev": {
+                "bury": false,
+                "ease4": 1.3,
+                "hardFactor": 1.2,
+                "ivlFct": 1.0,
+                "maxIvl": 36500,
+                "perDay": 200
+            },
+            "reviewOrder": 0,
+            "timer": 0
+        }
+    ],
+    "desc": "",
+    "dyn": 0,
+    "extendNew": 0,
+    "extendRev": 0,
+    "media_files": [
+        "_auto-render.js",
+        "_highlight.css",
+        "_highlight.js",
+        "_katex.css",
+        "_katex.min.js",
+        "_markdown-it-mark.js",
+        "_markdown-it.min.js",
+        "_mhchem.js"
+    ],
+    "name": "KA",
+    "newLimit": null,
+    "newLimitToday": null,
+    "note_models": [
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "css": "\n\n.card {\n  font-family: arial;\n  font-size: 20px;\n  color: black;\n  background-color: white;\n}\ntable, th, td {\n\tborder: 1px solid black;\n\tborder-collapse: collapse;\n}\n#front, #back, #extra {\n\tvisibility: hidden;\n}\npre code {\n  background-color: #eee;\n  border: 1px solid #999;\n  display: block;\n  padding: 20px;\n  overflow: auto;\n}\n",
+            "flds": [
+                {
+                    "description": "",
+                    "font": "Arial",
+                    "name": "Front",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "description": "",
+                    "font": "Arial",
+                    "name": "Back",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "KaTeX and Markdown Basic",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tmpls": [
+                {
+                    "afmt": "\n\n<div id=\"front\"><pre>{{Front}}</pre></div>\n\n<hr id=answer>\n\n<div id=\"back\"><pre>{{Back}}</pre></div>\n\n<script>\n\tvar getResources = [\n\t\tgetCSS(\"_katex.css\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css\"),\n\t\tgetCSS(\"_highlight.css\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/default.min.css\"),\n\t\tgetScript(\"_highlight.js\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js\"),\n\t\tgetScript(\"_katex.min.js\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js\"),\n\t\tgetScript(\"_auto-render.js\", \"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/auto-render-cdn.js\"),\n\t\tgetScript(\"_markdown-it.min.js\", \"https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.0.4/markdown-it.min.js\"),\n\t\tgetScript(\"_markdown-it-mark.js\",\"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/_markdown-it-mark.js\")\n\t];\n        Promise.all(getResources).then(() => getScript(\"_mhchem.js\", \"https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js\")).then(render).catch(show);\n\t\n\n\tfunction getScript(path, altURL) {\n\t\treturn new Promise((resolve, reject) => {\n\t\t\tlet script = document.createElement(\"script\");\n\t\t\tscript.onload = resolve;\n\t\t\tscript.onerror = function() {\n\t\t\t\tlet script_online = document.createElement(\"script\");\n\t\t\t\tscript_online.onload = resolve;\n\t\t\t\tscript_online.onerror = reject;\n\t\t\t\tscript_online.src = altURL;\n\t\t\t\tdocument.head.appendChild(script_online);\n\t\t\t}\n\t\t\tscript.src = path;\n\t\t\tdocument.head.appendChild(script);\n\t\t})\n\t}\n\n\tfunction getCSS(path, altURL) {\n\t\treturn new Promise((resolve, reject) => {\n\t\t\tvar css = document.createElement('link');\n\t\t\tcss.setAttribute('rel', 'stylesheet');\n\t\t\tcss.type = 'text/css';\n\t\t\tcss.onload = resolve;\n\t\t\tcss.onerror = function() {\n\t\t\t\tvar css_online = document.createElement('link');\n\t\t\t\tcss_online.setAttribute('rel', 'stylesheet');\n\t\t\t\tcss_online.type = 'text/css';\n\t\t\t\tcss_online.onload = resolve;\n\t\t\t\tcss_online.onerror = reject;\n\t\t\t\tcss_online.href = altURL;\n\t\t\t\tdocument.head.appendChild(css_online);\n\t\t\t}\n\t\t\tcss.href = path;\n\t\t\tdocument.head.appendChild(css);\n\t\t});\n\t}\n\n\tfunction render() {\n\t\trenderMath(\"front\");\n\t\tmarkdown(\"front\");\n\t\trenderMath(\"back\");\n\t\tmarkdown(\"back\");\n\t\tshow();\n\t}\n\n\tfunction show() {\n\t\tdocument.getElementById(\"front\").style.visibility = \"visible\";\n\t\tdocument.getElementById(\"back\").style.visibility = \"visible\";\n\t}\n\n\n\tfunction renderMath(ID) {\n\t\tlet text = document.getElementById(ID).innerHTML;\n\t\ttext = replaceInString(text);\n\t\tdocument.getElementById(ID).textContent = text;\n\t\trenderMathInElement(document.getElementById(ID), {\n\t\t\tdelimiters:  [\n  \t\t\t\t{left: \"$$\", right: \"$$\", display: true},\n  \t\t\t\t{left: \"$\", right: \"$\", display: false}\n\t\t\t],\n                        throwOnError : false\n\t\t});\n\t}\n\tfunction markdown(ID) {\n\t\tlet md = new markdownit({typographer: true, html:true, highlight: function (str, lang) {\n                            if (lang && hljs.getLanguage(lang)) {\n                                try {\n                                    return hljs.highlight(str, { language: lang }).value;\n                                } catch (__) {}\n                            }\n\n                            return ''; // use external default escaping\n                        }}).use(markdownItMark);\n\t\tlet text = replaceHTMLElementsInString(document.getElementById(ID).innerHTML);\n\t\ttext = md.render(text);\n\t\tdocument.getElementById(ID).innerHTML = text.replace(/&lt;\\/span&gt;/gi,\"\\\\\");\n\t}\n\tfunction replaceInString(str) {\n\t\tstr = str.replace(/<[\\/]?pre[^>]*>/gi, \"\");\n\t\tstr = str.replace(/<br\\s*[\\/]?[^>]*>/gi, \"\\n\");\n\t\tstr = str.replace(/<div[^>]*>/gi, \"\\n\");\n\t\t// Thanks Graham A!\n\t\tstr = str.replace(/<[\\/]?span[^>]*>/gi, \"\")\n\t\tstr.replace(/<\\/div[^>]*>/g, \"\\n\");\n\t\treturn replaceHTMLElementsInString(str);\n\t}\n\n\tfunction replaceHTMLElementsInString(str) {\n\t\tstr = str.replace(/&nbsp;/gi, \" \");\n\t\tstr = str.replace(/&tab;/gi, \"\t\");\n\t\tstr = str.replace(/&gt;/gi, \">\");\n\t\tstr = str.replace(/&lt;/gi, \"<\");\n\t\treturn str.replace(/&amp;/gi, \"&\");\n\t}\n</script>\n",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "KaTeX and Markdown Basic",
+                    "ord": 0,
+                    "qfmt": "\n\n<div id=\"front\"><pre>{{Front}}</pre></div>\n\n<script>\n\tvar getResources = [\n\t\tgetCSS(\"_katex.css\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css\"),\n\t\tgetCSS(\"_highlight.css\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/default.min.css\"),\n\t\tgetScript(\"_highlight.js\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js\"),\n\t\tgetScript(\"_katex.min.js\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js\"),\n\t\tgetScript(\"_auto-render.js\", \"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/auto-render-cdn.js\"),\n\t\tgetScript(\"_markdown-it.min.js\", \"https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.0.4/markdown-it.min.js\"),\n                getScript(\"_markdown-it-mark.js\",\"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/_markdown-it-mark.js\")\n\t];\n        Promise.all(getResources).then(() => getScript(\"_mhchem.js\", \"https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js\")).then(render).catch(show);\n\t\n\n\tfunction getScript(path, altURL) {\n\t\treturn new Promise((resolve, reject) => {\n\t\t\tlet script = document.createElement(\"script\");\n\t\t\tscript.onload = resolve;\n\t\t\tscript.onerror = function() {\n\t\t\t\tlet script_online = document.createElement(\"script\");\n\t\t\t\tscript_online.onload = resolve;\n\t\t\t\tscript_online.onerror = reject;\n\t\t\t\tscript_online.src = altURL;\n\t\t\t\tdocument.head.appendChild(script_online);\n\t\t\t}\n\t\t\tscript.src = path;\n\t\t\tdocument.head.appendChild(script);\n\t\t})\n\t}\n\n\tfunction getCSS(path, altURL) {\n\t\treturn new Promise((resolve, reject) => {\n\t\t\tvar css = document.createElement('link');\n\t\t\tcss.setAttribute('rel', 'stylesheet');\n\t\t\tcss.type = 'text/css';\n\t\t\tcss.onload = resolve;\n\t\t\tcss.onerror = function() {\n\t\t\t\tvar css_online = document.createElement('link');\n\t\t\t\tcss_online.setAttribute('rel', 'stylesheet');\n\t\t\t\tcss_online.type = 'text/css';\n\t\t\t\tcss_online.onload = resolve;\n\t\t\t\tcss.onerror = reject;\n\t\t\t\tcss_online.href = altURL;\n\t\t\t\tdocument.head.appendChild(css_online);\n\t\t\t}\n\t\t\tcss.href = path;\n\t\t\tdocument.head.appendChild(css);\n\t\t});\n\t}\n\n\n\tfunction render() {\n\t\trenderMath(\"front\");\n\t\tmarkdown(\"front\");\n\t\tshow();\n\t}\n\n\tfunction show() {\n\t\tdocument.getElementById(\"front\").style.visibility = \"visible\";\n\t}\n\n\tfunction renderMath(ID) {\n\t\tlet text = document.getElementById(ID).innerHTML;\n\t\ttext = replaceInString(text);\n\t\tdocument.getElementById(ID).textContent = text;\n\t\trenderMathInElement(document.getElementById(ID), {\n\t\t\tdelimiters:  [\n  \t\t\t\t{left: \"$$\", right: \"$$\", display: true},\n  \t\t\t\t{left: \"$\", right: \"$\", display: false}\n\t\t\t],\n            throwOnError : false\n\t\t});\n\t}\n\n\tfunction markdown(ID) {\n\t\tlet md = new markdownit({typographer: true, html:true, highlight: function (str, lang) {\n                            if (lang && hljs.getLanguage(lang)) {\n                                try {\n                                    return hljs.highlight(str, { language: lang }).value;\n                                } catch (__) {}\n                            }\n\n                            return ''; // use external default escaping\n                        }}).use(markdownItMark);\n\t\tlet text = replaceHTMLElementsInString(document.getElementById(ID).innerHTML);\n\t\ttext = md.render(text);\n\t\tdocument.getElementById(ID).innerHTML = text.replace(/&lt;\\/span&gt;/gi,\"\\\\\");\n\t}\n\tfunction replaceInString(str) {\n\t\tstr = str.replace(/<[\\/]?pre[^>]*>/gi, \"\");\n\t\tstr = str.replace(/<br\\s*[\\/]?[^>]*>/gi, \"\\n\");\n\t\tstr = str.replace(/<div[^>]*>/gi, \"\\n\");\n\t\t// Thanks Graham A!\n\t\tstr = str.replace(/<[\\/]?span[^>]*>/gi, \"\")\n\t\tstr.replace(/<\\/div[^>]*>/g, \"\\n\");\n\t\treturn replaceHTMLElementsInString(str);\n\t}\n\n\tfunction replaceHTMLElementsInString(str) {\n\t\tstr = str.replace(/&nbsp;/gi, \" \");\n\t\tstr = str.replace(/&tab;/gi, \"\t\");\n\t\tstr = str.replace(/&gt;/gi, \">\");\n\t\tstr = str.replace(/&lt;/gi, \"<\");\n\t\treturn str.replace(/&amp;/gi, \"&\");\n\t}\n</script>\n"
+                }
+            ],
+            "type": 0
+        }
+    ],
+    "notes": [
+        {
+            "__type__": "Note",
+            "fields": [
+                "Four approaches when modelling cognitive systems",
+                "* Computational/bio-inspired<br>* Abstraction level<br>* Mutual dependence of brain, body and enviorment<br>* The ultimate-proximate distinction - why vs. how - hvorfor gitte oppførsler vs. hvilke mekanismer oppfyller oppførslene&nbsp;"
+            ],
+            "guid": "ssPZ~ur<NY",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Cognition<br>Hint: PAALAA",
+                "* Perception<br>* Anticipation<br>* Action<br>* Learning<br>* Adapting<br>* Autonomy"
+            ],
+            "guid": "pVpD]%XlzQ",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Marr's hierarchy of abstraction",
+                "Computational theory<br><br>Representation &amp; Algorithm <br><br>Hardware/software implementation <br><br>Viktigste på toppen, nivåer under realiserer de foregående nivåene. Kan ikke forstå hvordan fugler flyr ved å se på fjærene."
+            ],
+            "guid": "eGJ-1bT/=O",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Kelso's hierarchy of abstraction</a>",
+                "<a>Boundary constraints - Goals &amp; tasks<br><br>Collective variables - System behaviour<br><br>Components - Realized system <br><br>Alle\n nivåer er like viktige og sterke koblinger. Mener at fysisk \nimplementasjon spiller en viktig rolle i øvre lag. Dette er mer i tråd \nmed emergent syn.</a>"
+            ],
+            "guid": "lm/Qn82tAA",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Circular causality</a>",
+                "<a>Global oppførsel påvirker lokale strukturer, som igjen bestemmer global oppførsel. <br><br>The idea that actions are related through a series of recursive loops or repeating cycles</a>"
+            ],
+            "guid": "JFJ*m~<g*`",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Emergent paradigm</a>",
+                "<a>Bevare autonomi, selv-organisering. <br><br>Connectionist: Neurale nett, proximate forklaringer (hvilke mekanismer som oppfyller oppførselen).</a>"
+            ],
+            "guid": "ke&-whY)YM",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Physical Symbol System Hypothesis</a>",
+                "<a>A physical symbol system has the necessary and sufficient means for general intelligent action</a>"
+            ],
+            "guid": "u/J~`OH(Yp",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Heuristic Search Hypothesis</a>",
+                "<a>Løse problemer med søk. All AI is search.</a>"
+            ],
+            "guid": "e[-pMr3pEx",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>The knowledge level, as a computer system level</a>",
+                "<a>Newell mener det er nivå over symbol-nivået. Knowledge level system: Bruker av all sin kunnskap på alle problemer.</a>"
+            ],
+            "guid": "F8(Dyywd~P",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "MHP",
+                "Model Human Processor<br><br><a>Abstraksjon av hvordan mennesker interagerer med verden.<br><br>3 systemer:<br>* The perceptual system<br>* The motor system<br>* The cognitivist system</a>"
+            ],
+            "guid": "rs@,))$JnY",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "P8: Rationality Principle",
+                "A person acts so as to attain his goals through rational action, given \nthe structure of the task and his inputs of information and bounded by \nlimitations of his knowledge and processing ability<br><br><a>Soar og ICARUS bygger på dette.</a>"
+            ],
+            "guid": "OXC7o{nE6:",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Soar",
+                "<div><a>• Paradigm: Cognitivist<br><br>• Motivation: UTF<br><br>• Architecture: LTM (P + E + S) og WM. <br><br>• Knowledge: Goals, states, operators. <br><br>•Problem solving: Production system. Recognize-act cycle. <br>Input -&gt; Elaboration -&gt; Decision -&gt; Application -&gt; Output<br><br>•Learning: Impasse, reinforcement, semantic, episodic</a><br></div><h2></h2>"
+            ],
+            "guid": "v93:8(kwD!",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>ACT-R</a>",
+                "• Paradigm: Hybrid<br><br>• Motivation: Se på hjernen og kombinere, psykologisk. Ønsker UTC og løse ekte problemer.<br><br>• Architecture: Goal, declarative, visual og manual, alle med buffere. <br><br>• Knowledge: Procedural memory -&gt; production rules<br><br>• Problem solving: Henter chunks hvis over threshold, regner utility for actions. Velger max. <br><br>• Learning: Justerer verdier for chunks."
+            ],
+            "guid": "hna~qw;[@n",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>ICARUS</a>",
+                "• Paradigm: Cognitivist<br><br>• Motivation: Conceptual inference, mer generell en soar. <br><br>• Architecture: Pyramide<br>Problem solving<br>Skill execution<br>Conceptual -&gt; Lager beliefs (state)<br>Tilstand representerer ved beliefs. <br><br>• Knowledge: Concepts and skills<br><br>• Problem solving: Backtrack for å løse subgoal. <br><br>• Learning: Lagrer når den har klart å løse subgoal."
+            ],
+            "guid": "J@@Q/.h;e,",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>CLARION</a>",
+                "• Paradigm: Hybrid<br><br>• Motivation: Implisitt, eksplisitt (underbevissthet) og meta-kognisjon <br><br>• Architecture: 4 subsystemer (ACS, NACS, MS, MCS)<br><br>• Knowledge: implisitt (nevrale nett) og eksplisitt (symboler)<br><br>• Problem solving: Observerer state, topp og bunn velger action, blir valgt en av disse<br><br>•\n Learning: I starten, lærer top-down (avhengig av pre-programmert \nkunnskap). Etter en stund, bottom up (nevrale nettet lærer og kan \npåvirke symbolstrukturer)"
+            ],
+            "guid": "s-Nq%rlMPp",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>SUBSUMPTION</a>",
+                "<a>• Paradigm: Emergent<br><br>• Motivation: Robust og enkle er det beste<br><br>• Architecture: Lag på lag<br><br>• Knowledge types: Prosesserer ekte verden<br><br>• Problem solving: Øvre lag kan overstyre<br><br>• Learning: Bygge på flere lag<br><br>Input kan bli inhibit, dvs. replaced<br>Output kan bli supressed, dvs overskrevet</a>"
+            ],
+            "guid": "Lp476[m3,>",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>CBR/Dynamic memory</a>",
+                "<a>Retrieval: <br>1 Har description<br>2 Traverserer minnet for å finne target, bruker heuristikk.</a>"
+            ],
+            "guid": "in0:s?/8qS",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Analogy, structure mapping theory</a>",
+                "<a>• Literal: Many attributes - many relations <br>• Analogy: Few attributes - many relations<br>• Abstraction: Few(er) attributes - many relations<br>• Anomaly: Few attributes - few relations</a>"
+            ],
+            "guid": "nYP6aH;v[M",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>MAC-FAC</a>",
+                "<a>Many are called, few are chosen</a>"
+            ],
+            "guid": "eXTL:o/ZT5",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Analogy engine</a>",
+                "<a>Mapper base to target<br>Finner similarities<br>Finner den som er aller best</a>"
+            ],
+            "guid": "C1t-tA4uEF",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>CREEK</a>",
+                "<a>Cases har general-domain-knowledge<br><br>* Active<br>* Focus<br>* Explain</a>"
+            ],
+            "guid": "M8jm-rc`gh",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "CBR",
+                "<a>Retrieve<br><br>Reuse<br><br>Revise (tweak)<br><br>Retain (lagre det du lærte)</a>"
+            ],
+            "guid": "F4O`(0_v:v",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Situation assesment</a>",
+                "<div><div><div><div><a>Become aware of the situation and its probable future outcomes.</a></div></div></div></div>"
+            ],
+            "guid": "EO[j0BOQ}V",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Standard model of the mind</a>",
+                "<a>Ønske om å få en felles modell, da kan alle disipliner jobbe mer effektivt.<br><br>Forslag til standard modell har: <br>WM, deklarativt og procedural long-term memory, perception og motor</a>"
+            ],
+            "guid": "LlM;MVC=3/",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Fuzzy logic</a>",
+                "<div><div><div><div><a>Sannhetsverdier kan være alle relle verdier mellom 0 og 1</a></div></div></div></div>"
+            ],
+            "guid": "Nl3cPBHp{$",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Fuzzy inference</a>",
+                "* Rule evaluation<br>* Aggregering av regel-output<br>* Defuzzification<br>* Fuzzificatino<br>"
+            ],
+            "guid": "N]v?PD&iUo",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Hvordan modellerer ANN hjernen?</a>",
+                "* Dendrite - Input<br>* Axon - Output<br>* Synapse - Weight<br>* Soma - Neuron"
+            ],
+            "guid": "Fj|}6Io-g}",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Hvordan bestemmes output fra et nevron?</a>",
+                "<a>Activiation function.</a>"
+            ],
+            "guid": "EnM#CghgQs",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>CNN</a>",
+                "<a>Convolutional Neural Network. <br><br>Prosessere data som har grid-lignende topologi, f.eks. bilder.</a>"
+            ],
+            "guid": "M87r|H:Y:(",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Mamdani vs. Sugeno</a>",
+                "<a>Mamdani krever med regnig, men er lettere for mennesker å forstå. Sugeno krever mindre regning, men er ikke like intuitiv.</a>"
+            ],
+            "guid": "L;T$:C;s_9",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>ANN</a>",
+                "<a>Etterligner hjernen og nevroner. En modell av resonnering basert på hjernen.<br><br>Hvert nevron er veldig enkelt, men mange sammen gir stor kraft.<br><br>Connections to \"right\" answer blir styrket, slik kan nevrale nettverk lære gjennomerfaring.<br></a><br>* Dendrite - Input<br>* Soma - Neuron<br>* Axon - Output<br>* Synapse - Weight"
+            ],
+            "guid": "c99W/_ng*N",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>5 open research issues (Langley)</a>",
+                "* Understanding and interpretation <br>* Dynamic memory and categories<br>* Creativity<br>* Emotions and metacognition <br>* Personality and goal reasoning"
+            ],
+            "guid": "hE<d$c`]z(",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Deductive reasoning</a>",
+                "<a>Starter med det du vet og jobber fremover mot konklusjon. Bayesian networks starter med premises.</a>"
+            ],
+            "guid": "m2]_-E=h}t",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Inductive reasoning</a>",
+                "<a>Start med konklusjon og jobb bakover.</a>"
+            ],
+            "guid": "h|w4y+;:py",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>The core AGI hypothesis</a>",
+                "<a>Å\n lage og studere syntetisk, bred intelligens og sterk kapasitet til å \ngeneraliser, er kvalitativt ulikt fra systemer med mye smalere scope.</a>"
+            ],
+            "guid": "qb*<4xt/(!",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Bayesian Network</a>",
+                "<a>Is\n a probabilistic graphical model (a type of statistical model) that \nrepresents a set of random variables and their conditional dependencies \nvia a directed acyclic graph.</a>"
+            ],
+            "guid": "iEa=V&1H7l",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Situation Assessment - Endley's 3-level model</a>",
+                "* Level 1: Perception of elements in current situation<br>* Level 2: Comprehension of current situation <br>* Level 3: Projection of future status"
+            ],
+            "guid": "flTin|blru",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>AGI: Three approaches</a>",
+                "* Mathematical - Trenger uendelig med datakraft<br>* Adaptationist - Effektiv tilpasning til generelle miljøer, da er det mer intelligent <br>* Embodiment - Fysiske bodies i fysiske environments"
+            ],
+            "guid": "kXCR#,0W%6",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>XAI: Type of explainable models</a>",
+                "• Deep explanation <br>Deep learning techniques<br><br>• Interpretable models<br>ML-teknikker som lærer strukturer <br><br>• Model interpretation <br>Eksperimenter med ML-modeller for å kunne utlede explainable modeller"
+            ],
+            "guid": "w|JiL.G5gG",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        }
+    ],
+    "reviewLimit": null,
+    "reviewLimitToday": null
+}
