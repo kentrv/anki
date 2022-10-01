@@ -1,0 +1,863 @@
+{
+    "__type__": "Deck",
+    "children": [],
+    "crowdanki_uuid": "9f878652-4157-11ed-a206-31bf9b4e6d91",
+    "deck_config_uuid": "04e00f86-4155-11ed-a206-31bf9b4e6d91",
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig",
+            "autoplay": true,
+            "buryInterdayLearning": false,
+            "crowdanki_uuid": "04e00f86-4155-11ed-a206-31bf9b4e6d91",
+            "dyn": false,
+            "interdayLearningMix": 0,
+            "lapse": {
+                "delays": [
+                    10.0
+                ],
+                "leechAction": 1,
+                "leechFails": 8,
+                "minInt": 1,
+                "mult": 0.0
+            },
+            "maxTaken": 60,
+            "name": "Default",
+            "new": {
+                "bury": false,
+                "delays": [
+                    1.0,
+                    10.0
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    1,
+                    4,
+                    0
+                ],
+                "order": 1,
+                "perDay": 20
+            },
+            "newGatherPriority": 0,
+            "newMix": 0,
+            "newPerDayMinimum": 0,
+            "newSortOrder": 0,
+            "replayq": true,
+            "rev": {
+                "bury": false,
+                "ease4": 1.3,
+                "hardFactor": 1.2,
+                "ivlFct": 1.0,
+                "maxIvl": 36500,
+                "perDay": 200
+            },
+            "reviewOrder": 0,
+            "timer": 0
+        }
+    ],
+    "desc": "",
+    "dyn": 0,
+    "extendNew": 0,
+    "extendRev": 0,
+    "media_files": [
+        "_auto-render.js",
+        "_highlight.css",
+        "_highlight.js",
+        "_katex.css",
+        "_katex.min.js",
+        "_markdown-it-mark.js",
+        "_markdown-it.min.js",
+        "_mhchem.js"
+    ],
+    "name": "TDT4117 - Informasjonsgjenfinning",
+    "newLimit": null,
+    "newLimitToday": null,
+    "note_models": [
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "css": "\n\n.card {\n  font-family: arial;\n  font-size: 20px;\n  color: black;\n  background-color: white;\n}\ntable, th, td {\n\tborder: 1px solid black;\n\tborder-collapse: collapse;\n}\n#front, #back, #extra {\n\tvisibility: hidden;\n}\npre code {\n  background-color: #eee;\n  border: 1px solid #999;\n  display: block;\n  padding: 20px;\n  overflow: auto;\n}\n",
+            "flds": [
+                {
+                    "description": "",
+                    "font": "Arial",
+                    "name": "Front",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "description": "",
+                    "font": "Arial",
+                    "name": "Back",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "KaTeX and Markdown Basic",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tmpls": [
+                {
+                    "afmt": "\n\n<div id=\"front\"><pre>{{Front}}</pre></div>\n\n<hr id=answer>\n\n<div id=\"back\"><pre>{{Back}}</pre></div>\n\n<script>\n\tvar getResources = [\n\t\tgetCSS(\"_katex.css\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css\"),\n\t\tgetCSS(\"_highlight.css\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/default.min.css\"),\n\t\tgetScript(\"_highlight.js\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js\"),\n\t\tgetScript(\"_katex.min.js\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js\"),\n\t\tgetScript(\"_auto-render.js\", \"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/auto-render-cdn.js\"),\n\t\tgetScript(\"_markdown-it.min.js\", \"https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.0.4/markdown-it.min.js\"),\n\t\tgetScript(\"_markdown-it-mark.js\",\"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/_markdown-it-mark.js\")\n\t];\n        Promise.all(getResources).then(() => getScript(\"_mhchem.js\", \"https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js\")).then(render).catch(show);\n\t\n\n\tfunction getScript(path, altURL) {\n\t\treturn new Promise((resolve, reject) => {\n\t\t\tlet script = document.createElement(\"script\");\n\t\t\tscript.onload = resolve;\n\t\t\tscript.onerror = function() {\n\t\t\t\tlet script_online = document.createElement(\"script\");\n\t\t\t\tscript_online.onload = resolve;\n\t\t\t\tscript_online.onerror = reject;\n\t\t\t\tscript_online.src = altURL;\n\t\t\t\tdocument.head.appendChild(script_online);\n\t\t\t}\n\t\t\tscript.src = path;\n\t\t\tdocument.head.appendChild(script);\n\t\t})\n\t}\n\n\tfunction getCSS(path, altURL) {\n\t\treturn new Promise((resolve, reject) => {\n\t\t\tvar css = document.createElement('link');\n\t\t\tcss.setAttribute('rel', 'stylesheet');\n\t\t\tcss.type = 'text/css';\n\t\t\tcss.onload = resolve;\n\t\t\tcss.onerror = function() {\n\t\t\t\tvar css_online = document.createElement('link');\n\t\t\t\tcss_online.setAttribute('rel', 'stylesheet');\n\t\t\t\tcss_online.type = 'text/css';\n\t\t\t\tcss_online.onload = resolve;\n\t\t\t\tcss_online.onerror = reject;\n\t\t\t\tcss_online.href = altURL;\n\t\t\t\tdocument.head.appendChild(css_online);\n\t\t\t}\n\t\t\tcss.href = path;\n\t\t\tdocument.head.appendChild(css);\n\t\t});\n\t}\n\n\tfunction render() {\n\t\trenderMath(\"front\");\n\t\tmarkdown(\"front\");\n\t\trenderMath(\"back\");\n\t\tmarkdown(\"back\");\n\t\tshow();\n\t}\n\n\tfunction show() {\n\t\tdocument.getElementById(\"front\").style.visibility = \"visible\";\n\t\tdocument.getElementById(\"back\").style.visibility = \"visible\";\n\t}\n\n\n\tfunction renderMath(ID) {\n\t\tlet text = document.getElementById(ID).innerHTML;\n\t\ttext = replaceInString(text);\n\t\tdocument.getElementById(ID).textContent = text;\n\t\trenderMathInElement(document.getElementById(ID), {\n\t\t\tdelimiters:  [\n  \t\t\t\t{left: \"$$\", right: \"$$\", display: true},\n  \t\t\t\t{left: \"$\", right: \"$\", display: false}\n\t\t\t],\n                        throwOnError : false\n\t\t});\n\t}\n\tfunction markdown(ID) {\n\t\tlet md = new markdownit({typographer: true, html:true, highlight: function (str, lang) {\n                            if (lang && hljs.getLanguage(lang)) {\n                                try {\n                                    return hljs.highlight(str, { language: lang }).value;\n                                } catch (__) {}\n                            }\n\n                            return ''; // use external default escaping\n                        }}).use(markdownItMark);\n\t\tlet text = replaceHTMLElementsInString(document.getElementById(ID).innerHTML);\n\t\ttext = md.render(text);\n\t\tdocument.getElementById(ID).innerHTML = text.replace(/&lt;\\/span&gt;/gi,\"\\\\\");\n\t}\n\tfunction replaceInString(str) {\n\t\tstr = str.replace(/<[\\/]?pre[^>]*>/gi, \"\");\n\t\tstr = str.replace(/<br\\s*[\\/]?[^>]*>/gi, \"\\n\");\n\t\tstr = str.replace(/<div[^>]*>/gi, \"\\n\");\n\t\t// Thanks Graham A!\n\t\tstr = str.replace(/<[\\/]?span[^>]*>/gi, \"\")\n\t\tstr.replace(/<\\/div[^>]*>/g, \"\\n\");\n\t\treturn replaceHTMLElementsInString(str);\n\t}\n\n\tfunction replaceHTMLElementsInString(str) {\n\t\tstr = str.replace(/&nbsp;/gi, \" \");\n\t\tstr = str.replace(/&tab;/gi, \"\t\");\n\t\tstr = str.replace(/&gt;/gi, \">\");\n\t\tstr = str.replace(/&lt;/gi, \"<\");\n\t\treturn str.replace(/&amp;/gi, \"&\");\n\t}\n</script>\n",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "KaTeX and Markdown Basic",
+                    "ord": 0,
+                    "qfmt": "\n\n<div id=\"front\"><pre>{{Front}}</pre></div>\n\n<script>\n\tvar getResources = [\n\t\tgetCSS(\"_katex.css\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css\"),\n\t\tgetCSS(\"_highlight.css\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/default.min.css\"),\n\t\tgetScript(\"_highlight.js\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js\"),\n\t\tgetScript(\"_katex.min.js\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js\"),\n\t\tgetScript(\"_auto-render.js\", \"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/auto-render-cdn.js\"),\n\t\tgetScript(\"_markdown-it.min.js\", \"https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.0.4/markdown-it.min.js\"),\n                getScript(\"_markdown-it-mark.js\",\"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/_markdown-it-mark.js\")\n\t];\n        Promise.all(getResources).then(() => getScript(\"_mhchem.js\", \"https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js\")).then(render).catch(show);\n\t\n\n\tfunction getScript(path, altURL) {\n\t\treturn new Promise((resolve, reject) => {\n\t\t\tlet script = document.createElement(\"script\");\n\t\t\tscript.onload = resolve;\n\t\t\tscript.onerror = function() {\n\t\t\t\tlet script_online = document.createElement(\"script\");\n\t\t\t\tscript_online.onload = resolve;\n\t\t\t\tscript_online.onerror = reject;\n\t\t\t\tscript_online.src = altURL;\n\t\t\t\tdocument.head.appendChild(script_online);\n\t\t\t}\n\t\t\tscript.src = path;\n\t\t\tdocument.head.appendChild(script);\n\t\t})\n\t}\n\n\tfunction getCSS(path, altURL) {\n\t\treturn new Promise((resolve, reject) => {\n\t\t\tvar css = document.createElement('link');\n\t\t\tcss.setAttribute('rel', 'stylesheet');\n\t\t\tcss.type = 'text/css';\n\t\t\tcss.onload = resolve;\n\t\t\tcss.onerror = function() {\n\t\t\t\tvar css_online = document.createElement('link');\n\t\t\t\tcss_online.setAttribute('rel', 'stylesheet');\n\t\t\t\tcss_online.type = 'text/css';\n\t\t\t\tcss_online.onload = resolve;\n\t\t\t\tcss.onerror = reject;\n\t\t\t\tcss_online.href = altURL;\n\t\t\t\tdocument.head.appendChild(css_online);\n\t\t\t}\n\t\t\tcss.href = path;\n\t\t\tdocument.head.appendChild(css);\n\t\t});\n\t}\n\n\n\tfunction render() {\n\t\trenderMath(\"front\");\n\t\tmarkdown(\"front\");\n\t\tshow();\n\t}\n\n\tfunction show() {\n\t\tdocument.getElementById(\"front\").style.visibility = \"visible\";\n\t}\n\n\tfunction renderMath(ID) {\n\t\tlet text = document.getElementById(ID).innerHTML;\n\t\ttext = replaceInString(text);\n\t\tdocument.getElementById(ID).textContent = text;\n\t\trenderMathInElement(document.getElementById(ID), {\n\t\t\tdelimiters:  [\n  \t\t\t\t{left: \"$$\", right: \"$$\", display: true},\n  \t\t\t\t{left: \"$\", right: \"$\", display: false}\n\t\t\t],\n            throwOnError : false\n\t\t});\n\t}\n\n\tfunction markdown(ID) {\n\t\tlet md = new markdownit({typographer: true, html:true, highlight: function (str, lang) {\n                            if (lang && hljs.getLanguage(lang)) {\n                                try {\n                                    return hljs.highlight(str, { language: lang }).value;\n                                } catch (__) {}\n                            }\n\n                            return ''; // use external default escaping\n                        }}).use(markdownItMark);\n\t\tlet text = replaceHTMLElementsInString(document.getElementById(ID).innerHTML);\n\t\ttext = md.render(text);\n\t\tdocument.getElementById(ID).innerHTML = text.replace(/&lt;\\/span&gt;/gi,\"\\\\\");\n\t}\n\tfunction replaceInString(str) {\n\t\tstr = str.replace(/<[\\/]?pre[^>]*>/gi, \"\");\n\t\tstr = str.replace(/<br\\s*[\\/]?[^>]*>/gi, \"\\n\");\n\t\tstr = str.replace(/<div[^>]*>/gi, \"\\n\");\n\t\t// Thanks Graham A!\n\t\tstr = str.replace(/<[\\/]?span[^>]*>/gi, \"\")\n\t\tstr.replace(/<\\/div[^>]*>/g, \"\\n\");\n\t\treturn replaceHTMLElementsInString(str);\n\t}\n\n\tfunction replaceHTMLElementsInString(str) {\n\t\tstr = str.replace(/&nbsp;/gi, \" \");\n\t\tstr = str.replace(/&tab;/gi, \"\t\");\n\t\tstr = str.replace(/&gt;/gi, \">\");\n\t\tstr = str.replace(/&lt;/gi, \"<\");\n\t\treturn str.replace(/&amp;/gi, \"&\");\n\t}\n</script>\n"
+                }
+            ],
+            "type": 0
+        }
+    ],
+    "notes": [
+        {
+            "__type__": "Note",
+            "fields": [
+                "MRR",
+                "<a>Mean\n Reciprocal Rank. Hvor høyt på en topp-k liste befinner relevante treff \nseg? Godt egnet når man er mest opptatt av å finne relevante treff i en \ntopp-k resultatliste. <br><br>For alle spørringer: $\\frac 1 {\\text{Posisjon til første relevante treff}}$<br><br>Ta gjennomsnitt av disse.</a>"
+            ],
+            "guid": "zo4[DEkAD}",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "MAP",
+                "<a>Mean Average Precision. <br><br>Snittpresisjon av én spørring, deretter presisjon av flere spørringer.</a>"
+            ],
+            "guid": "dRa3x3UARa",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Precision</a>",
+                "<a>Relevante gjenfunnet / antall gjenfunnet<br><br>Andel gjenfunnet som er relevante<br><br>Precision &amp; recall brukes alltid sammen.</a>"
+            ],
+            "guid": "Olz}$@>el",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Recall</a>",
+                "<a>$\\frac {\\text{Relevante gjenfunnet}}&nbsp; {\\text{antall relevante}}$<br><br>Andel av relevante som er gjenfunnet<br><br>Precision &amp; recall brukes alltid sammen.</a>"
+            ],
+            "guid": "D^AcI8d!]n",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Hvorfor evaluere IR-systemer?</a>",
+                "<a>• Møter systemet brukerens behov, finner systemet relevante dokumenter. <br><br>• Sammenligne med andre systemer</a>"
+            ],
+            "guid": "wi=_YA%?ib",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Hvordan evaluere IR-systemer?</a>",
+                "<a>• Gitt samling med dokumenter, lag et sett med spørringer og fasit (evt. bruk TREC).<br><br>• Gjør spørringer for ulike systemer <br>¨<br>• Regn ut valgt metrikk</a>"
+            ],
+            "guid": "qNAz*mdwxC",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Evalueringsmål</a>",
+                "<a>• Precision &amp; recall<br><br>• MAP<br><br>• MRR<br><br>• F-measure<br><br>• E-measure<br><br>• P@N<br><br>• R-precision<br><br>Brukerorienterte:<br><br>• Novelty <br><br>• Coverage</a>"
+            ],
+            "guid": "Iyb*%xtY>t",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>TREC</a>",
+                "<a>TREC er en konferanse, til hver konferanse utvikles et standardsett med dokumenter og spørringer (med fasit). <br><br>Tilbyr tekstsamlinger og infrastruktur for evaluering av IR-systemer. <br><br>Kan teste mot en fasit og evalueringsmetrikker, gjør det lettere å sammenligne.</a>"
+            ],
+            "guid": "vq/Bn8tNP5",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Precision og recall i Web-søk</a>",
+                "<a>Kjenner ikke antall relevante, så kan ikke beregne recall.</a>"
+            ],
+            "guid": "cLOW=?},4y",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Brukerorienterte mål</a>",
+                "<a>Coverage: Finner de relevante brukeren forventer<br><br>Novelty: Finner nye, relevante for brukeren</a>"
+            ],
+            "guid": "FH7G+V-}Xd",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Fordeler ved Lucene</a>",
+                "<a>Støtter rask indeksering og søk, samt de standard tekstoperasjonene.</a>"
+            ],
+            "guid": "v%cak0/f&z",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Hovedkonsept med IR-system</a>",
+                "<a>Representasjon, lagring, organisering og aksessering av informasjon.</a>"
+            ],
+            "guid": "cvg}tdMGH{",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Hva er en query?</a>",
+                "<a>Oversettelse av brukerens behov til en mengde av nøkkelord.</a>"
+            ],
+            "guid": "sWuG:aFp[C",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Datagjenfinning vs. informasjonsgjenfinning</a>",
+                "<a>IR: Delvis match, ranking og søk i ustrukturert data. Spørrespråk er natulig språk. Tolererer noe feil. Relevans. <br><br>DR: Som oppslag i database, høy struktur, full match, ingen rangering, veldig deterministisk. DR subset of IR.</a>"
+            ],
+            "guid": "HpluC0M4Mn",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Ranking</a>",
+                "<a>En rangering av retrieved dokumenter som forhåpentligvis representerer relevansen mtp. spørringen.</a>"
+            ],
+            "guid": "J9WfH]>HGj",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>TF-IDF</a>",
+                "<a>TF: Termfrekvens<br><br>IDF: Invers dokument frekvens = log(N)/df<br><br>Forteller hvor viktig og unikt en term er i samlingen, bidrar til høy diskrimineringsgrad.</a>"
+            ],
+            "guid": "OGc,S]eZAS",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Edit distance</a>",
+                "<a>Antall operasjoner av (slett, bytt og legg til) som kreves for å få to ord like.</a>"
+            ],
+            "guid": "KQ890C>CoP",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Indeksterm</a>",
+                "<a>Term\n som blir valgt for å representere et dokument. Velg termer som sier noe\n om innholdet og som bidrar til høy diskrimineringsgrad.</a>"
+            ],
+            "guid": "mv{D_,6-T=",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Valg av indeksterm</a>",
+                "Kan velges av ekspert: <br><br>• Fordeler: Domenekunnskap, vet hvilke som bør indekseres og kan vekte dem. <br><br>• Ulemper: Subjektivitet, mangel på effektivit, kostnad ved manuelt arbeid. <br><br>Kriterier for valg: <br><br>• Skal være dekkende for innholdet og representere innholdet, høyest mulig diskrimineringsgrad, er også plassbesparende."
+            ],
+            "guid": "f#[{u%+ug_",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Indekseringsmåter</a>",
+                "<a>• Invertert indeks (effektiv, lavt krav til lagring)<br><br>•\n Suffix tre (høy overhead, men effektiv for små samlinger, easier to \nsearch for substrings but they have large space requirements)<br><br>• Signaturfil (kan gå tom for hashkode ved store samlinger, men effektiv for små, sekvensielt søk)<br><br>• Suffix array (Mange random disk access når arrayet blir stor)</a>"
+            ],
+            "guid": "i+W(w&QjoG",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Signaturfil</a>",
+                "* Hashfunksjon<br><br>* Blokkstørrelse<br><br>* Signatur for hver blokk"
+            ],
+            "guid": "Q6F*o_lJTM",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Hvorfor indeksere?</a>",
+                "<a>Det går raskere, har et oppslag å søke i, i stedet for teksten hver gang.</a>"
+            ],
+            "guid": "MSXw8#6^M3",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Suffix trie vs. vocabulary trie</a>",
+                "<a>Suffix trie er i seg selv en indekseringsmetode mens vocabulary trie brukes i forbindelse med<br>konstruksjonen av indeks i \"inverted index\"-indekseringsmetoden.<br><br>Vocabulary trie lager vi basert på \"term occurrencies\" og må ha med termene (vocabulary)</a>"
+            ],
+            "guid": "xZS;ugpz@e",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Suffix array vs. suffix tree</a>",
+                "I\n array'et listes opp kun der termene som skal indekseres dukker opp \n(occurences), mens i treet skal førstebokstaven i hver term være med \nsammen med occurences. <br><br>På grunn av dette tar array'et mindre plass enn treet.<br><br>Prinsippet\n med begge indekseringsmetodene er basert på at en tekst sees på som en \nlang streng, hvor hver ordposisjon i teksten er suffiks av strengen. \nSuffikstreet og suffiks arrayet er bygd basert på alle suffiksene i \ntreet med startposisjon av suffiksene som \"occurences\". Hver posisjon \npeker på hver suffiks."
+            ],
+            "guid": "p{[pgCRK>}",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Semantic gap i IR</a>",
+                "<a>Avstand\n mellom høy-nivå-konsepter og lav-nivå visuelle features. Lite gap \nmellom tabell og meningen, større avstand mellom et dokument og den \noverordnende meningen til dokumentet. Stort avstand mellom bilde-feature\n og semantikkene til bildet.</a>"
+            ],
+            "guid": "I!-=B!R,No",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>TBIR vs. CBIR</a>",
+                "<a>TBIR:\n query is a text and serach performed over text sourrounding images. \nIndex based on text. CBIR: query by example (quesry is an image). Index \nby raw content of the images (features)</a>"
+            ],
+            "guid": "Oxkh6$0*k/",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Fordel med fargehistogram</a>",
+                "<a>Advantages: Color histogram independent from image resolution.<br><br>Drawback: Quantization effect</a>"
+            ],
+            "guid": "K$3nfr~QP-",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Steg i bruk av fargehistogram</a>",
+                "1 - selection of a color space,<br><br>2 - quantization of the color space, <br><br>3 - computation of histograms,<br><br>4 - derivation of the histogram distance function,<br><br>5 - identification of indexing shortcuts"
+            ],
+            "guid": "lsrGb^XZZ)",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Feature</a>",
+                "<a>Feature\n er noe som best representer og/eller karakteriserer et media objekt ifm\n innholdsbasertgjenfinning av multimedia informasjon. Dette kan være \nfarger, fargehistogram, form (shape), og texture for bilder. For video \nkan dette være R-frame, objekter, bevegelsesinformasjon, \ntekstannotering, osv.</a>"
+            ],
+            "guid": "pZg,D*weWs",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Fordeler og ulemper boolean model</a>",
+                "<a>Basert\n på at den ikke rangerer søkeresultater men bruker \"full match\", kan det\n diskuteres om boolske modellen egentlig er en IR-modell. Vanskelig for \nbrukere å formulere spørringer. <br>Returnerer for mange eller for få.</a>"
+            ],
+            "guid": "zfBqL@J&!E",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Language model vs. probabilistic model</a>",
+                "Begge basert på sannsynlighet. <br><br>PM: $P(R | q, d)$<br><br>LM: $P(q | {\\text{dokumentmodellen}})$<br><br>Hovedproblemet med LM er:<br>- LM antar at det er likhet mellom dokument og informasjon. Dette er i seg selv en svakhet<br>- LM baserer seg på en veldig forenkling av språkmodellen<br>- Vanskeligere å bruke URF enn i PM<br>Vanskeligere å integrere frasesøk, spørsmål og svar spørringer, og boolsksøk."
+            ],
+            "guid": "L.J_5~u:K`",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Forklar Cosinus likhetsfunksjonen</a>",
+                "<a>Likhetsfunksjon\n som benyttes av vector space modellen. Finner likhet mellom spørring og\n et dokument basert på cosinus-verdien av vinkelen mellom vektorene av \nvektene for disse to.</a>"
+            ],
+            "guid": "c[86qznqwQ",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Vector space model vs. probabilistic model",
+                "VSM er mer deterministisk og enklere å beregne. Sannsynlighetsmodellen er avhengig av at estimeringene og antakelsene man legger til grunn er gode.<br><br>Vektormodellen: <br>(1) hvert dokument samt spørring modelleres som<br>vektor med elementer av termvekter. <br><br>(2) Hver termvekt fås ved å bruke TF-IDF. Similaritet mellom et<br>dokument D og en spørring Q kan beregnes deretter ved å beregne cosinus-verdien mellom vektorene<br>for disse.<br><br>+ delvis søk tillatt<br>+ rangering av resultater<br>+ veldig enkel <br>- antar termer uavhengig<br>- kan ta med mange dokumenter som brukeren ikke mener er relevante<br><br>Sannsynlighetsmodellen: <br><br>There exists a subset of the documents collection that are relevant to a given query. Need to guess the initial separation of documents into relevant and non-relevant sets. <br><br>+ delvis match tillatt<br>+ rangering basert på sannsynlighet for relevant<br>- Må estimere initiell sannsynlighet<br>- Tar ikke hensyn til TF og IDF<br><br>URF: Kan ikke gjøre query expansion"
+            ],
+            "guid": "NlblS3lgfh",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Metoder for rangering av resultater fra et søk",
+                "1. VSM<br>2. PM<br>3. BM25<br>4. Language model"
+            ],
+            "guid": "NT[DfJ?~#1",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "BM25",
+                "Basert på probabilistisk, men tar også hensyn til dokumentlengde. Har blitt vist at finetuned BM25 gjør det bedre enn TF/IDF."
+            ],
+            "guid": "N!&8Tg0rWW",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Tekstoperasjoner før indeksering",
+                "1 - Leksikalsk analyse - Gjøre teksten om til tokens eller sett av termer, fjerner evt. unødvendige tall, bindestrek, etc<br><br>2 - Stopporfjerning - Fjerne alle vanlige termer som feks. artikler (\"the\", \"a\", etc.), samt de som nevnes i de fleste dokumentene i dokumentsamlingen<br><br>3 - Stemming - Gjøre om alle termer til ordstamme (feks. conntected, connecting, connector til<br>connect).<br><br>4 - Bygge thethaurus - Lage thesaurus av termer slik at dokumenter kan indekseres med termer med samme betydning også, i tillegg til de fra dokumentene.<br><br>5 - Valg indekstermer - Velge termer som skal indekseres manuelt av en domeneekspert og/eller automatisk som navn, spesielle termer, etc."
+            ],
+            "guid": "FGrZx8!%g+",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Thesaurus gir bedre ...",
+                "Recall, men ikke nødvendigvis presisjon. Finner dokumenter med synonymer, men ord kan ha ulik betydning. <br><br>F.eks. apple"
+            ],
+            "guid": "C^aZnLAikg",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Stemming kan gi økt ...",
+                "Recall. Nyttig ved mindre samlinger og recall er viktig og mulig å beregne. <br>Benyttes ikke ved web-søk, for passer ikke."
+            ],
+            "guid": "GPCbQ:UMM;",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Formler for URF",
+                "- Rocchio<br>- Ide Regular<br>- Ide \"Dec Hi\""
+            ],
+            "guid": "v_4%x<[l>I",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Implicit relevance feedback",
+                "Implisit relevance feedback er feeback fra brukeren som ikke er direkte valg av relevans.<br><br>Dette kan feks. være at man bruker klikk-informasjon som indirekte angivelse av relevans (dvs. hvis en bruker åpner og leser på et dokument som er returnert, kan dette ses på som relevant etc.)."
+            ],
+            "guid": "h>@:W-cLUi",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Automatic local vs. global analysis",
+                "Begge er brukt i forbindelse med søkefordring ved hjelp av bruken av thesaurus. <br><br>Hovedforskjellen er at den ALA (scalar metrics) bruker resultatet fra søket som grunnlag for lage denne thesaurus'en mens AGA bruker hele samlingen (statistical thesaurs)."
+            ],
+            "guid": "l(=.>Z0A^,",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Scalar clusters",
+                "Brukes i lokal automatisk analyse for å finne relasjoner mello termer, basert på naboskap for å bygge thesaurus. <br><br>Hvis mer enn to ord ofte opptrer sammen i dokumenter, desto mer relatert er de."
+            ],
+            "guid": "j)D]Wnyaw3",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Fordel med distribuerte web-søkesystemer",
+                "Harverst system, består av Broker og Gatherers. <br><br>• Fordele oppgaver mellom brokers. <br><br>• Minker belastning på serveren generelt. <br><br>• Mer effektiv innsamling. <br><br>• Kan ha domenespesifikke brokers som lager indeks basert på domener."
+            ],
+            "guid": "Me>un@NuXR",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Sentralisert vs. distribuert web-søkesystem",
+                "Hovedforskjellene er håndtering av indekseringen av sidene. <br><br>Det sentraliserte systemet benytter seg av Crawlere mot et sentralisert indexer (en server) mens det distribuerte systemet bruker flere gatherers som kummuniserer med brokers som kan kommunisere med andre brokers. Disse tar seg da av i felleskap indekseringen."
+            ],
+            "guid": "mb#)Qc:M1$",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<div><div><div><div>HITS vs. PageRang</div></div></div></div>",
+                "HITS: Authority and hub. Avhengig av spørring. Inngående og utgående linker. <br><br>PageRank: Vekter dokumenter basert på linker. Ikke avhengig av spørring. Har med sannsynlighet for at brukeren tilfeldigvis kommer inn på siden. Bruker bare inngående lenker (utgående for normalisering)"
+            ],
+            "guid": "L]>xe*P6}v",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Rangering ved web-IR",
+                "<div><div></div></div><div><div>HITS<br>PageRank<br>Most Cited<br><br>Boolean Spread<br>Vector Spread</div></div>"
+            ],
+            "guid": "IY(|8n7A)u",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Web-søk vs. tradisjonell IR",
+                "I web: <br><br>• Kun indekser<br><br>• Rangering basert på link-info <br><br>• Større mengde informasjon<br><br>• Informasjon kan forsvinne<br><br>• Heterogenitet i innhold<br><br>Tradisjonell IR: <br><br>• Mer homogene dokumentsamlinger<br><br>• Stort sett også dokumenter tilgjengelig<br><br>• Rangering basert på dokumentinnholds<br>"
+            ],
+            "guid": "OaHmYlx]Kz",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Text vs. multimedia",
+                "Multimedia er sammensatt av ulike dataformater, mer komplekts."
+            ],
+            "guid": "teZ}*VcCn$",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Krav for MIRS-modell:",
+                "<div><div><div><div>- Extensibility - Possibility to add new data types.<br>- Representation Ability - Ability to represent basic media types and composite objects.<br>- Flexibility - Ability to specify, query, search items at different abstraction levels.<br>- Storage and Search Efficiency.</div></div></div></div>"
+            ],
+            "guid": "Gera58,*gc",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Zipf's Law",
+                "Estimates the distribution of words across documents in the collection. <br><br>Kan brukes til å vurdere hvilke ord som kan være gode kandidater til stoppordliste."
+            ],
+            "guid": "x2Z/dgpB7p",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Heaps' Law",
+                "Estimates the number of distinct words in a document or collection. <br><br>An empirical rule which describes the vocabulary growth as a function of the text size."
+            ],
+            "guid": "tX]*L,[RRh",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "User interfaces for web",
+                "Query interface + Answer interface. Answer inneholder ofte resultatet som er sortert. Kan ofte finne lignende dokumenter eller expande query."
+            ],
+            "guid": "fQm?M@hGY0",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "User relevance feedback",
+                "Brukeren kan gi informasjon om hvilke dokumenter som er relevante, slik kan spørringen forbedres."
+            ],
+            "guid": "foCI9YXH`3",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Most-cited er basert på ...",
+                "Termer på sider som peker til den aktuelle siden."
+            ],
+            "guid": "HhVap=Q|.o",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "2/3 prosesser i et IR-system",
+                "• Indexing process<br><br>• Retrieval and ranking process<br><br>• (Web:) Crawling process"
+            ],
+            "guid": "nV8692v?@s",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Browsing",
+                "Leter også etter et relevant resultat, men følger linker."
+            ],
+            "guid": "s2SfPfgVfk",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Document surrogate",
+                "The information that summarizes the document."
+            ],
+            "guid": "Ljy~1gwF{O",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Clustering",
+                "Grouping of items according to some measure of similarity."
+            ],
+            "guid": "Arm+@.HAi2",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "IR model = DQFR",
+                "Documents<br>Queries<br>Framework<br>Ranking function"
+            ],
+            "guid": "gh$80J#1cf",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Hvorfor bruker log-frekvens vekting?",
+                "The relevance of the document does not increase proportionally with the term frequency"
+            ],
+            "guid": "DWP^Fvl<q)",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Relative recall",
+                "The ratio between the number of relevant documents found and the number of relevant documents the userexpected to find."
+            ],
+            "guid": "K=gRcv188,",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Recall effort",
+                "<div><div></div></div><div><div>The ratio between the number of relevant documents the user expected to find and the number of documentsexamined in an attempt to find the expected relevant documents.</div></div>"
+            ],
+            "guid": "OV?l[0TSol",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Quert expansion vs. relevance feedback",
+                "QE: Information related to the query used to expand it.<br><br>RF: Information on relevant documents explicitly provided from user to a query."
+            ],
+            "guid": "p}>{Z!5`;@",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Local analysis: Association clusters",
+                "co-occurrence of terms inside documents,"
+            ],
+            "guid": "LxKcm_,FY%",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Local analysis: Metric clusters",
+                "that two terms occurring in the same sentence tend to be more correlated"
+            ],
+            "guid": "lhC,Q;y}<M",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Local analysis: Scalar clusters",
+                "<div><div><div><div></div></div><div><div>two terms with similar neighborhoods have some synonymy relationship,</div></div></div></div>"
+            ],
+            "guid": "DrbW2+yPg%",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Global analysis",
+                "<div><div></div></div><div><div>Determine term similarity through a pre-computed statistical analysis on the complete collection.</div></div>"
+            ],
+            "guid": "myTF75n?rJ",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "LESSIT",
+                "Leksikalsk analyse<br><br>Stoppord<br><br>Stemming<br><br>Indekstermer<br><br>Thesaurus"
+            ],
+            "guid": "Ij:kMRI^d%",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "4 typer stemming:",
+                "• Affix removal -&gt; Porters algoritme<br><br>• Table Lookup<br><br>•Successor variety<br><br>•N-grams."
+            ],
+            "guid": "Q[b4FNpUg&",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "3 typer komprimering",
+                "<div><div></div></div><div><div>- Adaptive</div><div>- Static</div><div>- Semi-static</div></div>"
+            ],
+            "guid": "vfQ,*)91(o",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Full inverted index",
+                "Har også med hvor i dokumentet termen befinner seg."
+            ],
+            "guid": "id10$qlj|p",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "BIM",
+                "Binary independence model. <br><br>Termene har vekter."
+            ],
+            "guid": "c:?!8&1+-p",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Full automatic query expansion",
+                "Query -&gt; Bygg theasaurus -&gt; Expand query -&gt; rerun<br><br>Søk også med alle synonymer! <br><br>Global: Thesaurus fra alle spørringer<br>Local: Bare fra retrieved spørringer"
+            ],
+            "guid": "Dec]2{pwEs",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        }
+    ],
+    "reviewLimit": null,
+    "reviewLimitToday": null
+}
