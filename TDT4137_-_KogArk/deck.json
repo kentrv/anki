@@ -131,7 +131,7 @@
             "__type__": "Note",
             "fields": [
                 "Four approaches when modelling cognitive systems",
-                "* Computational/bio-inspired<br>* Abstraction level<br>* Mutual dependence of brain, body and enviorment<br>* The ultimate-proximate distinction - why vs. how - hvorfor gitte oppførsler vs. hvilke mekanismer oppfyller oppførslene&nbsp;"
+                "<ol><li><b>Computational vs. bio-inspired spectrum</b><ul><li><em>How much inspiration is drawned from natural systems?</em></li><li>neural networks -- quite far along the biological axis</li><li>statistical learning -- much less so, more computational</li></ul></li><li><b>Level of abstraction in biological model</b><ul><li><em>How faithful were we when copying the natural system?</em></li></ul></li><li><b>The mutual dependence of brain, body and environment</b><b></b><ul><li><em>How much importance is placed on the system's physical structure?</em></li></ul></li><li><b>The ultimate-proximate distinction</b><ul><li><em>How do we separate cognitive ability from the actual implementation? (Why vs. how)</em></li><li>Ultimate: goals/tasks <ul><li>\"why and what\"</li><li>more closesly aligned with cognitivist systems</li></ul></li><li>Proximate: methods <ul><li>\"how\"</li><li>more closely aligned with emergent systems</li></ul></li></ul></li></ol>"
             ],
             "guid": "ssPZ~ur<NY",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -140,8 +140,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "Cognition<br>Hint: PAALAA",
-                "* Perception<br>* Anticipation<br>* Action<br>* Learning<br>* Adapting<br>* Autonomy"
+                "The nature of cognition (according to Vernon)<br><br><sub>Hint: PAALAA</sub>",
+                "* Perception<br>* Anticipation<br>* Action<br>* Learning<br>* Adapting<br>* Autonomy<br>---<br>Note: Some claim that a cognitive system must also be able to:<br>- Explain&nbsp;what it's doing and why<br>- Self-reflect<br>- …"
             ],
             "guid": "pVpD]%XlzQ",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -151,7 +151,7 @@
             "__type__": "Note",
             "fields": [
                 "Marr's hierarchy of abstraction",
-                "Computational theory<br><br>Representation &amp; Algorithm <br><br>Hardware/software implementation <br><br>Viktigste på toppen, nivåer under realiserer de foregående nivåene. Kan ikke forstå hvordan fugler flyr ved å se på fjærene."
+                "<ul><li><strong>Computational Theory</strong><ul><li>Goal, logic, strategy, model</li></ul></li><li><strong>Representation &amp; Algorithm</strong><ul><li>Representation, transformation</li></ul></li><li><strong>Hardware Implementation</strong><ul><li>Physical realization</li></ul></li></ul> Viktigste på toppen, nivåer under realiserer de foregående nivåene. Kan ikke forstå hvordan fugler flyr ved å se på fjærene. Svak kobling mellom lagene."
             ],
             "guid": "eGJ-1bT/=O",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -161,7 +161,7 @@
             "__type__": "Note",
             "fields": [
                 "Kelso's hierarchy of abstraction",
-                "Boundary constraints - Goals &amp; tasks<br><br>Collective variables - System behaviour<br><br>Components - Realized system <br><br>Alle\n nivåer er like viktige og sterke koblinger. Mener at fysisk \nimplementasjon spiller en viktig rolle i øvre lag. Dette er mer i tråd \nmed emergent syn."
+                "<ul><li><strong>Boundary constraints</strong><ul><li>Goals, tasks</li></ul></li><li><strong>Collective variables</strong><ul><li>System behaviour</li></ul></li><li><strong>Components - Realized</strong> system <ul><li>Realized system</li></ul></li></ul><br>Alle nivåer er like viktige og sterke koblinger. Mener at fysisk implementasjon spiller en viktig rolle i øvre lag. Dette er mer i tråd med emergent syn."
             ],
             "guid": "lm/Qn82tAA",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -171,7 +171,7 @@
             "__type__": "Note",
             "fields": [
                 "Circular causality",
-                "Global oppførsel påvirker lokale strukturer, som igjen bestemmer global oppførsel. <br><br>The idea that actions are related through a series of recursive loops or repeating cycles"
+                "Global oppførsel påvirker lokale strukturer, som igjen bestemmer global oppførsel. <br><br><i>The idea that actions are related, through a series of recursive loops or repeating cycles.</i>"
             ],
             "guid": "JFJ*m~<g*`",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -181,7 +181,7 @@
             "__type__": "Note",
             "fields": [
                 "Emergent paradigm",
-                "Bevare autonomi, selv-organisering. <br><br>Connectionist: Neurale nett, proximate forklaringer (hvilke mekanismer som oppfyller oppførselen)."
+                "Bevare autonomi, selv-organisering. <br><br><i>\"The ultimate goal of an emergent cognitive system is to maintain its own autonomy, and cognition is the process by which it accomplishes this.\"</i><br><br><b>Approaches</b><br><ul><li>Connectionist</li><li>Dynamical</li><li>Enactive</li></ul><hr>These approaches are related and helpfully distinguished with the ultimate-proximate relationship:<br><ul><li>Connectionist and dynamical are more concerned with proximate explanations of cognition</li><li>Connectionist systems typically correspond to a lower level of abstraction vs. dynamical system.</li><li>Enaction makes strong claims about <em>what</em> cognition is (but few mathematical models yet)</li></ul><br>Many working in the field believes the future of the emergent paradigm is in the unification of these three approaches."
             ],
             "guid": "ke&-whY)YM",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -191,7 +191,7 @@
             "__type__": "Note",
             "fields": [
                 "Physical Symbol System Hypothesis",
-                "A physical symbol system has the necessary and sufficient means for general intelligent action."
+                "A physical symbol system has the necessary and sufficient means for general intelligent action<br><br>(Newell &amp; Simons, Turing Award Lecture 1975)"
             ],
             "guid": "u/J~`OH(Yp",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -201,7 +201,7 @@
             "__type__": "Note",
             "fields": [
                 "Heuristic Search Hypothesis",
-                "Løse problemer med søk. All AI is search."
+                "Løse problemer med søk. \"All AI is search.\"<br><br>---<br><br><i>\"The solutions to problems are represented as symbol structures. A physical symbol system exercises its intelligence in problem solving by search - that is, by generating and progressively modifying symbol structures until it produces a solution structure.\"</i>"
             ],
             "guid": "e[-pMr3pEx",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -211,7 +211,7 @@
             "__type__": "Note",
             "fields": [
                 "The knowledge level, as a computer system level",
-                "Newell mener det er nivå over symbol-nivået. Knowledge level system: Bruker av all sin kunnskap på alle problemer."
+                "Newell mener det er et nivå over symbol-nivået.<br><br>Knowledge level system: Bruker av all sin kunnskap på alle problemer.<br><br>---<br><br><b>Related&nbsp;&nbsp;<br></b><ul><li>Principle of rationality <ul><li><i>\"If an agent has knowledge that one of its actions will lead to one of its goals, it will select that action.\"&nbsp; </i></li></ul></li><li>Intelligence = degree to which systems approximates a knowledge-level system.</li><li>In the real world, we're bounded by rationaliy and limited memory.</li></ul>"
             ],
             "guid": "F8(Dyywd~P",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -231,7 +231,7 @@
             "__type__": "Note",
             "fields": [
                 "P8: Rationality Principle",
-                "A person acts so as to attain his goals through rational action, given \nthe structure of the task and his inputs of information and bounded by \nlimitations of his knowledge and processing ability<br><br>Soar og ICARUS bygger på dette."
+                "<i>A person acts so as to attain his goals through rational action, given \nthe structure of the task and his inputs of information and bounded by \nlimitations of his knowledge and processing ability.</i><br><br>Soar og ICARUS bygger på dette."
             ],
             "guid": "OXC7o{nE6:",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -291,7 +291,7 @@
             "__type__": "Note",
             "fields": [
                 "CBR/Dynamic memory",
-                "Retrieval: <br>1 Har description<br>2 Traverserer minnet for å finne target, bruker heuristikk."
+                "Retrieval: <br><ol><li>Har description</li><li>Traverserer minnet for å finne target, bruker heuristikk.</li></ol>"
             ],
             "guid": "in0:s?/8qS",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -301,7 +301,7 @@
             "__type__": "Note",
             "fields": [
                 "Analogy, structure mapping theory",
-                "• Literal: Many attributes - many relations <br>• Analogy: Few attributes - many relations<br>• Abstraction: Few(er) attributes - many relations<br>• Anomaly: Few attributes - few relations"
+                "<ul><li>Literal: Many attributes - many relations</li><li>Analogy: Few attributes - many relations</li><li>Abstraction: Few(er) attributes - many relations</li><li>Anomaly: Few attributes - few relations</li></ul>"
             ],
             "guid": "nYP6aH;v[M",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -341,7 +341,7 @@
             "__type__": "Note",
             "fields": [
                 "CBR",
-                "Retrieve<br><br>Reuse<br><br>Revise (tweak)<br><br>Retain (lagre det du lærte)"
+                "<ul><li>Retrieve</li><li>Reuse</li><li>Revise (tweak)</li><li>Retain (lagre det du lærte)</li></ul>"
             ],
             "guid": "F4O`(0_v:v",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
@@ -514,6 +514,16 @@
                 "• Deep explanation <br>Deep learning techniques<br><br>• Interpretable models<br>ML-teknikker som lærer strukturer <br><br>• Model interpretation <br>Eksperimenter med ML-modeller for å kunne utlede explainable modeller"
             ],
             "guid": "w|JiL.G5gG",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Cognitivist paradigm",
+                "<i>\"The essential position of cognitivism is that cognition is achieved by computations performed on internal symbolic knowledge representations.\"</i><br><br><strong>Related</strong><br>- Physical Symbol System Hypothesis<br>- Heuristic Search Hypothesis<br>- Knowledge Level Hypothesis<br><br><strong>Observation</strong><br><ul><li>Implies accessible ontology (in theory). In reality the <span style=\"text-decoration: underline;\">semantic gap</span> and the&nbsp;<span style=\"text-decoration: underline;\">Symbol Grounding Problem</span> are obstacles. But: the semantic gap is being closed by ML, probabilistic modelling, better logic/reasoning/everything.</li><li>Natural and (perfect) artifical intelligence are equivalent.</li></ul>"
+            ],
+            "guid": "yzwvQvIMYy",
             "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
             "tags": []
         }
