@@ -1,0 +1,1873 @@
+{
+    "__type__": "Deck",
+    "children": [],
+    "crowdanki_uuid": "04dff6d6-4155-11ed-a206-31bf9b4e6d91",
+    "deck_config_uuid": "04e00f86-4155-11ed-a206-31bf9b4e6d91",
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig",
+            "autoplay": true,
+            "buryInterdayLearning": false,
+            "crowdanki_uuid": "04e00f86-4155-11ed-a206-31bf9b4e6d91",
+            "dyn": false,
+            "interdayLearningMix": 0,
+            "lapse": {
+                "delays": [
+                    10.0
+                ],
+                "leechAction": 1,
+                "leechFails": 8,
+                "minInt": 1,
+                "mult": 0.0
+            },
+            "maxTaken": 60,
+            "name": "Default",
+            "new": {
+                "bury": false,
+                "delays": [
+                    1.0,
+                    10.0
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    1,
+                    4,
+                    0
+                ],
+                "order": 1,
+                "perDay": 20
+            },
+            "newGatherPriority": 0,
+            "newMix": 0,
+            "newPerDayMinimum": 0,
+            "newSortOrder": 0,
+            "replayq": true,
+            "rev": {
+                "bury": false,
+                "ease4": 1.3,
+                "hardFactor": 1.2,
+                "ivlFct": 1.0,
+                "maxIvl": 36500,
+                "perDay": 200
+            },
+            "reviewOrder": 0,
+            "timer": 0
+        }
+    ],
+    "desc": "",
+    "dyn": 0,
+    "extendNew": 0,
+    "extendRev": 0,
+    "media_files": [
+        "_auto-render.js",
+        "_highlight.css",
+        "_highlight.js",
+        "_katex.css",
+        "_katex.min.js",
+        "_markdown-it-mark.js",
+        "_markdown-it.min.js",
+        "_mhchem.js"
+    ],
+    "name": "KI",
+    "newLimit": null,
+    "newLimitToday": null,
+    "note_models": [
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "css": "\n\n.card {\n  font-family: arial;\n  font-size: 20px;\n  color: black;\n  background-color: white;\n}\ntable, th, td {\n\tborder: 1px solid black;\n\tborder-collapse: collapse;\n}\n#front, #back, #extra {\n\tvisibility: hidden;\n}\npre code {\n  background-color: #eee;\n  border: 1px solid #999;\n  display: block;\n  padding: 20px;\n  overflow: auto;\n}\n",
+            "flds": [
+                {
+                    "description": "",
+                    "font": "Arial",
+                    "name": "Front",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "description": "",
+                    "font": "Arial",
+                    "name": "Back",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "KaTeX and Markdown Basic",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tmpls": [
+                {
+                    "afmt": "\n\n<div id=\"front\"><pre>{{Front}}</pre></div>\n\n<hr id=answer>\n\n<div id=\"back\"><pre>{{Back}}</pre></div>\n\n<script>\n\tvar getResources = [\n\t\tgetCSS(\"_katex.css\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css\"),\n\t\tgetCSS(\"_highlight.css\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/default.min.css\"),\n\t\tgetScript(\"_highlight.js\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js\"),\n\t\tgetScript(\"_katex.min.js\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js\"),\n\t\tgetScript(\"_auto-render.js\", \"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/auto-render-cdn.js\"),\n\t\tgetScript(\"_markdown-it.min.js\", \"https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.0.4/markdown-it.min.js\"),\n\t\tgetScript(\"_markdown-it-mark.js\",\"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/_markdown-it-mark.js\")\n\t];\n        Promise.all(getResources).then(() => getScript(\"_mhchem.js\", \"https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js\")).then(render).catch(show);\n\t\n\n\tfunction getScript(path, altURL) {\n\t\treturn new Promise((resolve, reject) => {\n\t\t\tlet script = document.createElement(\"script\");\n\t\t\tscript.onload = resolve;\n\t\t\tscript.onerror = function() {\n\t\t\t\tlet script_online = document.createElement(\"script\");\n\t\t\t\tscript_online.onload = resolve;\n\t\t\t\tscript_online.onerror = reject;\n\t\t\t\tscript_online.src = altURL;\n\t\t\t\tdocument.head.appendChild(script_online);\n\t\t\t}\n\t\t\tscript.src = path;\n\t\t\tdocument.head.appendChild(script);\n\t\t})\n\t}\n\n\tfunction getCSS(path, altURL) {\n\t\treturn new Promise((resolve, reject) => {\n\t\t\tvar css = document.createElement('link');\n\t\t\tcss.setAttribute('rel', 'stylesheet');\n\t\t\tcss.type = 'text/css';\n\t\t\tcss.onload = resolve;\n\t\t\tcss.onerror = function() {\n\t\t\t\tvar css_online = document.createElement('link');\n\t\t\t\tcss_online.setAttribute('rel', 'stylesheet');\n\t\t\t\tcss_online.type = 'text/css';\n\t\t\t\tcss_online.onload = resolve;\n\t\t\t\tcss_online.onerror = reject;\n\t\t\t\tcss_online.href = altURL;\n\t\t\t\tdocument.head.appendChild(css_online);\n\t\t\t}\n\t\t\tcss.href = path;\n\t\t\tdocument.head.appendChild(css);\n\t\t});\n\t}\n\n\tfunction render() {\n\t\trenderMath(\"front\");\n\t\tmarkdown(\"front\");\n\t\trenderMath(\"back\");\n\t\tmarkdown(\"back\");\n\t\tshow();\n\t}\n\n\tfunction show() {\n\t\tdocument.getElementById(\"front\").style.visibility = \"visible\";\n\t\tdocument.getElementById(\"back\").style.visibility = \"visible\";\n\t}\n\n\n\tfunction renderMath(ID) {\n\t\tlet text = document.getElementById(ID).innerHTML;\n\t\ttext = replaceInString(text);\n\t\tdocument.getElementById(ID).textContent = text;\n\t\trenderMathInElement(document.getElementById(ID), {\n\t\t\tdelimiters:  [\n  \t\t\t\t{left: \"$$\", right: \"$$\", display: true},\n  \t\t\t\t{left: \"$\", right: \"$\", display: false}\n\t\t\t],\n                        throwOnError : false\n\t\t});\n\t}\n\tfunction markdown(ID) {\n\t\tlet md = new markdownit({typographer: true, html:true, highlight: function (str, lang) {\n                            if (lang && hljs.getLanguage(lang)) {\n                                try {\n                                    return hljs.highlight(str, { language: lang }).value;\n                                } catch (__) {}\n                            }\n\n                            return ''; // use external default escaping\n                        }}).use(markdownItMark);\n\t\tlet text = replaceHTMLElementsInString(document.getElementById(ID).innerHTML);\n\t\ttext = md.render(text);\n\t\tdocument.getElementById(ID).innerHTML = text.replace(/&lt;\\/span&gt;/gi,\"\\\\\");\n\t}\n\tfunction replaceInString(str) {\n\t\tstr = str.replace(/<[\\/]?pre[^>]*>/gi, \"\");\n\t\tstr = str.replace(/<br\\s*[\\/]?[^>]*>/gi, \"\\n\");\n\t\tstr = str.replace(/<div[^>]*>/gi, \"\\n\");\n\t\t// Thanks Graham A!\n\t\tstr = str.replace(/<[\\/]?span[^>]*>/gi, \"\")\n\t\tstr.replace(/<\\/div[^>]*>/g, \"\\n\");\n\t\treturn replaceHTMLElementsInString(str);\n\t}\n\n\tfunction replaceHTMLElementsInString(str) {\n\t\tstr = str.replace(/&nbsp;/gi, \" \");\n\t\tstr = str.replace(/&tab;/gi, \"\t\");\n\t\tstr = str.replace(/&gt;/gi, \">\");\n\t\tstr = str.replace(/&lt;/gi, \"<\");\n\t\treturn str.replace(/&amp;/gi, \"&\");\n\t}\n</script>\n",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "KaTeX and Markdown Basic",
+                    "ord": 0,
+                    "qfmt": "\n\n<div id=\"front\"><pre>{{Front}}</pre></div>\n\n<script>\n\tvar getResources = [\n\t\tgetCSS(\"_katex.css\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css\"),\n\t\tgetCSS(\"_highlight.css\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/default.min.css\"),\n\t\tgetScript(\"_highlight.js\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js\"),\n\t\tgetScript(\"_katex.min.js\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js\"),\n\t\tgetScript(\"_auto-render.js\", \"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/auto-render-cdn.js\"),\n\t\tgetScript(\"_markdown-it.min.js\", \"https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.0.4/markdown-it.min.js\"),\n                getScript(\"_markdown-it-mark.js\",\"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/_markdown-it-mark.js\")\n\t];\n        Promise.all(getResources).then(() => getScript(\"_mhchem.js\", \"https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js\")).then(render).catch(show);\n\t\n\n\tfunction getScript(path, altURL) {\n\t\treturn new Promise((resolve, reject) => {\n\t\t\tlet script = document.createElement(\"script\");\n\t\t\tscript.onload = resolve;\n\t\t\tscript.onerror = function() {\n\t\t\t\tlet script_online = document.createElement(\"script\");\n\t\t\t\tscript_online.onload = resolve;\n\t\t\t\tscript_online.onerror = reject;\n\t\t\t\tscript_online.src = altURL;\n\t\t\t\tdocument.head.appendChild(script_online);\n\t\t\t}\n\t\t\tscript.src = path;\n\t\t\tdocument.head.appendChild(script);\n\t\t})\n\t}\n\n\tfunction getCSS(path, altURL) {\n\t\treturn new Promise((resolve, reject) => {\n\t\t\tvar css = document.createElement('link');\n\t\t\tcss.setAttribute('rel', 'stylesheet');\n\t\t\tcss.type = 'text/css';\n\t\t\tcss.onload = resolve;\n\t\t\tcss.onerror = function() {\n\t\t\t\tvar css_online = document.createElement('link');\n\t\t\t\tcss_online.setAttribute('rel', 'stylesheet');\n\t\t\t\tcss_online.type = 'text/css';\n\t\t\t\tcss_online.onload = resolve;\n\t\t\t\tcss.onerror = reject;\n\t\t\t\tcss_online.href = altURL;\n\t\t\t\tdocument.head.appendChild(css_online);\n\t\t\t}\n\t\t\tcss.href = path;\n\t\t\tdocument.head.appendChild(css);\n\t\t});\n\t}\n\n\n\tfunction render() {\n\t\trenderMath(\"front\");\n\t\tmarkdown(\"front\");\n\t\tshow();\n\t}\n\n\tfunction show() {\n\t\tdocument.getElementById(\"front\").style.visibility = \"visible\";\n\t}\n\n\tfunction renderMath(ID) {\n\t\tlet text = document.getElementById(ID).innerHTML;\n\t\ttext = replaceInString(text);\n\t\tdocument.getElementById(ID).textContent = text;\n\t\trenderMathInElement(document.getElementById(ID), {\n\t\t\tdelimiters:  [\n  \t\t\t\t{left: \"$$\", right: \"$$\", display: true},\n  \t\t\t\t{left: \"$\", right: \"$\", display: false}\n\t\t\t],\n            throwOnError : false\n\t\t});\n\t}\n\n\tfunction markdown(ID) {\n\t\tlet md = new markdownit({typographer: true, html:true, highlight: function (str, lang) {\n                            if (lang && hljs.getLanguage(lang)) {\n                                try {\n                                    return hljs.highlight(str, { language: lang }).value;\n                                } catch (__) {}\n                            }\n\n                            return ''; // use external default escaping\n                        }}).use(markdownItMark);\n\t\tlet text = replaceHTMLElementsInString(document.getElementById(ID).innerHTML);\n\t\ttext = md.render(text);\n\t\tdocument.getElementById(ID).innerHTML = text.replace(/&lt;\\/span&gt;/gi,\"\\\\\");\n\t}\n\tfunction replaceInString(str) {\n\t\tstr = str.replace(/<[\\/]?pre[^>]*>/gi, \"\");\n\t\tstr = str.replace(/<br\\s*[\\/]?[^>]*>/gi, \"\\n\");\n\t\tstr = str.replace(/<div[^>]*>/gi, \"\\n\");\n\t\t// Thanks Graham A!\n\t\tstr = str.replace(/<[\\/]?span[^>]*>/gi, \"\")\n\t\tstr.replace(/<\\/div[^>]*>/g, \"\\n\");\n\t\treturn replaceHTMLElementsInString(str);\n\t}\n\n\tfunction replaceHTMLElementsInString(str) {\n\t\tstr = str.replace(/&nbsp;/gi, \" \");\n\t\tstr = str.replace(/&tab;/gi, \"\t\");\n\t\tstr = str.replace(/&gt;/gi, \">\");\n\t\tstr = str.replace(/&lt;/gi, \"<\");\n\t\treturn str.replace(/&amp;/gi, \"&\");\n\t}\n</script>\n"
+                }
+            ],
+            "type": 0
+        }
+    ],
+    "notes": [
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Rationality</a>",
+                "Does the right thing, according to what it knows."
+            ],
+            "guid": "BWjl.F8%Vy",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>(Total) Turing test</a>",
+                "Total Turing test includes a video signal."
+            ],
+            "guid": "myr]$g80!H",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Omniscience</a>",
+                "Knows outcome of actions"
+            ],
+            "guid": "mY=~S9wutB",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Agent function</a>",
+                "Maps any given percept sequence to an action. Abstract mathematical definition."
+            ],
+            "guid": "Bhau${(zhB",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Agent program</a>",
+                "Implements the agent function, kjører i et fysisk system."
+            ],
+            "guid": "OhWetVHv{7",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>An agent precieving&nbsp; its ... through ... and ... upon through ....</a>",
+                "Environment, sensors, acting, actuators."
+            ],
+            "guid": "xmi^%&@X8?",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Performance measure</a>",
+                "Evaluates any given sequence of environment states"
+            ],
+            "guid": "M}:Q9hn+,|",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>For each possible sequence, a rational agent should select an action that is expected to ... its ....</a>",
+                "Maximize, performance measure."
+            ],
+            "guid": "CQrf}avj#<",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Information gathering</a>",
+                "Doing actions in order to modify future percepts, exploration."
+            ],
+            "guid": ")0Dil>Tb?",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>A rational agent should be ....</a>",
+                "Autonomous."
+            ],
+            "guid": "O+(7=#QQzH",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Utility function</a>",
+                "Internalization of the performance measure"
+            ],
+            "guid": "qca}|b&Tr{",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Problem-solving agent</a>",
+                "Kind of goal based agent, use atomic representation of the world."
+            ],
+            "guid": "zoI$7dk]ZJ",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Goal</a>",
+                "Set of world states, exactly those states in which the goal is satisfied."
+            ],
+            "guid": "Lp$/G6E1iT",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Problem formulation</a>",
+                "The process of deciding what actions and states to consider, given a goal. <br><br>Under an observable, discrete, known and deterministic environment, the solution is a fixed sequence of actions."
+            ],
+            "guid": "C89Rh8%r3w",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Search</a>",
+                "Process of looking for a sequence of actions that reaches the goal."
+            ],
+            "guid": "b^>?)5|1i*",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>State space</a>",
+                "The set of all states reachable from the initial state by any sequence of actions"
+            ],
+            "guid": "B/4?*IC$?p",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Tree search with ... is ....</a>",
+                "Explored set/closed list, graph search.<br><br>(Husker hvilke den har besøkt)"
+            ],
+            "guid": "u.st/a,Yn=",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Det største problemet for BFS</a>",
+                "Bruker mye minne"
+            ],
+            "guid": "G0Sla}Rn?A",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Uniform cost search</a>",
+                "Expander noden med lavest path cost g(n). <br>Expands node in order of their optimal path cost. <br>"
+            ],
+            "guid": "hB`!iF~L,A",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>DFS - complete?</a>",
+                "• Graph version: Ja<br><br>• Tree version: Nei"
+            ],
+            "guid": "H8.^:i#A1:",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Fordel med DFS</a>",
+                "Lite bruk av minne"
+            ],
+            "guid": "JG.|orq4?C",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Backtracking vs. DFS<br>Fordel med backtracking?</a>",
+                "Backtracking expander bare en child node av gangen. <br><br>Ennå mindre krav til minne."
+            ],
+            "guid": "qVK[wGR.-H",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Depth-limited search kan terminere av to grunner</a>",
+                "Failure - ingen løsning<br>Cutoff - ingen løsning innenfor grensen"
+            ],
+            "guid": "GYoD<qjbWl",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Preferred uninformed search method when search space is large and depth is unknown</a>",
+                "Iterative deepening"
+            ],
+            "guid": "c5?a%XS*>,",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Best-first search</a>",
+                "A node is selected for expansion based on an evaluation function."
+            ],
+            "guid": "KaBO>nJRgu",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Open-loop system</a>",
+                "Ignores percept when executing the solution sequence."
+            ],
+            "guid": "oRF0T?br4l",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Abstraction</a>",
+                "Removing details from a representation"
+            ],
+            "guid": "e-8;#|f.jE",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Toy problem</a>",
+                "Intented to illustrate various problem-solving methods."
+            ],
+            "guid": "po3vA`ze4W",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>A* - complete and optimal?</a>",
+                "Tree version: Optimal if h(n) is admissible<br><br>Graph version: Optimal if h(n) is consistent"
+            ],
+            "guid": "KQR]!VRS0w",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Hvordan kan vi finne admissible heurisitc?</a>",
+                "Kostnaden til en optimal løsning av et relaxed problem er en admissible heuristic for det originale problemet."
+            ],
+            "guid": "yOB=Hn)ynM",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Relaxed problem</a>",
+                "A problem with fewer restrictions on the actions."
+            ],
+            "guid": "O<a3Fh8KDh",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Worst-case time complexity A*?</a>",
+                "O(b^d), b branching factor, d depth"
+            ],
+            "guid": "rh<i!TLlEc",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>A* biggest drawback</a>",
+                "Runs out of space, keep all expanded nodes in memory."
+            ],
+            "guid": "P+s0^j@tmx",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Local search algorithms</a>",
+                "Løse optimaliseringsproblemer, trenger en objective function for å vite hvor \"optimale\" de ulike løsningene er."
+            ],
+            "guid": "gjf!w<?W%M",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Contigency plan</a>",
+                "Strategy"
+            ],
+            "guid": "nqC>s/?W?C",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Conformant problem</a>",
+                "No sensor information, sensor-less problems"
+            ],
+            "guid": "O.i7+I`l(L",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Coerce</a>",
+                "\"Tvinge\", agent in sensor-less problems can coerce the world into a state."
+            ],
+            "guid": "MRtV+YR,=p",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Belief state</a>",
+                "The agents current belief about the possible physical states it might be in."
+            ],
+            "guid": "fBOCjI,sXU",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Drawback of hill-climbing search</a>",
+                "Can get stuck in a local maximum. Is greedy. Hvor bra hill climbing presterer er veldig avhengig av state-space-landskapet."
+            ],
+            "guid": "N$bJuQs6W9",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Local beam search</a>",
+                "k random states, generere successors, velg de k beste av alle disse."
+            ],
+            "guid": "df3gLXG;.O",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Genetic algorithm</a>",
+                "Trenger en fitness function, returnerer høye nivåer for bra states."
+            ],
+            "guid": "ogt<0Es6T;",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Pruning</a>",
+                "Allows us to ignore portions of the search tree that make no difference to the final choice."
+            ],
+            "guid": "Hgk`g1U/~y",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Ply</a>",
+                "A half move"
+            ],
+            "guid": "F@d4,.2,w=",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Evaluation function</a>",
+                "Returns an estimate of expected utility of the game from a given postition."
+            ],
+            "guid": "I8MCr=*cnV",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Weighted linear function</a>",
+                "Mathematically kind of evaluation function."
+            ],
+            "guid": "u@STmF,c(b",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Chance nodes</a>",
+                "Circles in min-max-tree"
+            ],
+            "guid": "Fx#F&#=u1a",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Monte Carlo simulation</a>",
+                "Play thousands of games against it self."
+            ],
+            "guid": "G}v(lbj7qc",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Consistent assingment</a>",
+                "Legal assignment. Does not violate any constraints."
+            ],
+            "guid": "cGZ^DL4oKW",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Complete assignment</a>",
+                "Every variable is assigned"
+            ],
+            "guid": "Gxx6+.<!$)",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Partial assignment</a>",
+                "<div><div><a></a></div></div><div><div>Assigned only some of the variables</div></div>"
+            ],
+            "guid": "LC7cS@B:z*",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>CSP benytter ... representation. Fordel med CSP er man kan benytte ... heuristikk.</a>",
+                "Factored, general-purpose (ikke problem-spesifikk)."
+            ],
+            "guid": "P~_*WLcDgE",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>CSP: Hvis vi har infinte domain</a>",
+                "Må utvikle constraint language, får da linear og non-linear constraints."
+            ],
+            "guid": "pg!nlr*VKU",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Solution to CSP</a>",
+                "Consistent, complete assignment"
+            ],
+            "guid": "msLQ{_w4%j",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>CSP: Node consistent</a>",
+                "All values in the variable's domain satisfy the variable's unary constaints."
+            ],
+            "guid": "k`-]vJ@@9?",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>CSP: ARC consistent</a>",
+                "<div><div><a></a></div></div><div><div>A variable is ARC consistent if every value in its domain satisfy the variable's binary contraints.<br><br>Hver binary constraints blir to arcs, en i hver retning. Alle n-ary constraints kan transformeres til binary constraints.</div></div>"
+            ],
+            "guid": "m`z+70#>nf",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>CSP: Path consistent</a>",
+                "Tighten binary constraints by using implicit constraints that are inferred by looking at triples of variables."
+            ],
+            "guid": "s5p,Z*Bfkp",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>CSP: K-consistent</a>",
+                "<div><div><a></a></div></div><div><div>\"For\n any set of k-1 variables and for any consistent assignment to those, a \nconsistent value can always be assigned to any k-th variable. \"</div></div>"
+            ],
+            "guid": "MR}UCYIC]7",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>CSP: Global constraints</a>",
+                "<div><div><a></a></div></div><div><div>Involving an arbitrary number of variables.</div></div>"
+            ],
+            "guid": "GBG_4]?}N0",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Vanlig egenskap ved CSPs: Commutative</a>",
+                "The application of any given set of actions has no effect on the outcome."
+            ],
+            "guid": "MLMLPF_cV+",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Backtracking search</a>",
+                "DFS that backtracks when a variable has no legal values left to assign."
+            ],
+            "guid": "Avl.Jm(1_0",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Heuristic</a>",
+                "Regler/kunnskap for å velge veier i et tilstandsrom som har best sjanse til å føre til en brukbare løsning."
+            ],
+            "guid": "G];uH43>[&",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>CSP: Minimum-remaining-values heuristic</a>",
+                "Choosing variables with fewest \"legal\" values"
+            ],
+            "guid": "g1z6jakb?t",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>CSP: Degree heuristic</a>",
+                "Select variable that is involved in largest number of constraints."
+            ],
+            "guid": "CN_[?W1**Q",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>CSP: Least-constraining-value heuristic</a>",
+                "Trying to leave maximum flexibility for subsequent variable assignment."
+            ],
+            "guid": "xsZvM!9PcY",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>CSP: Forward checking</a>",
+                "<div><div><a></a></div></div><div><div>When assigning a variable, do AC-3 for variabelen du assignet. Slett fra domenet til naboer.</div></div>"
+            ],
+            "guid": "Aj.GScJP%Z",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Maintaining Arc Consistency</a>",
+                "After assignment of variable, call AC-3. Forward checking does not look further enough into the future."
+            ],
+            "guid": "BPF2SQPpzu",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Tree decomposition</a>",
+                "Transform CSP into tree of subproblems."
+            ],
+            "guid": "F3>_8?Uz,O",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Knowledge base (KB)</a>",
+                "Set of entailed sentences."
+            ],
+            "guid": "A4*y7OuCg=",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Inference</a>",
+                "Deriving new sentences from old."
+            ],
+            "guid": "IdcCKyOd|9",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Kjøretid inference algoritmer for propositional logic</a>",
+                "Eksponensiell basert på størrelsen på input"
+            ],
+            "guid": "G.gSPl6M/!",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Logical agents: Declarative vs. procedural approach</a>",
+                "Declarative: Tell sentences<br>Procedural: Encode desired behaviour directly as program code"
+            ],
+            "guid": "J=,wUd9h2V",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Entailment</a>",
+                "a ⊨ b iff. M(a) ⊆ M(b)"
+            ],
+            "guid": "qd)Z8n&v04",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Sound</a>",
+                "Truth preserving. Gitt sanne premisser er konklusjonen alltid sann."
+            ],
+            "guid": "O293~~=41$",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Logical inference</a>",
+                "Derive conclusions."
+            ],
+            "guid": "be/.JMLUi&",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Model checking</a>",
+                "Enumerate models, check if M(a) ⊆ M(b)."
+            ],
+            "guid": "CS8fb4WRlm",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Grounding</a>",
+                "How to know that the KB is true in the real world."
+            ],
+            "guid": "ha[{F5p%CQ",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Literal</a>",
+                "p, ¬p"
+            ],
+            "guid": "q+}+.ap>?7",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Implication</a>",
+                "premise ⇒ conclusion"
+            ],
+            "guid": "GH4GxKA]xZ",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Implication vs. entialment</a>",
+                "\"Implication:\n (S→Q) is true iff (¬S∨Q) is true. <br><br>Entailment: (KB⊨Q) is true iff every \ninterpretation that makes all (S∈KB), makes Q true.\""
+            ],
+            "guid": "cr#qcsM6<5",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Propositional logic - advantages</a>",
+                "Declarative, allows partial/disjunctive/negated information, compositional."
+            ],
+            "guid": "b:j5Z#WMY2",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Propositional logic - disadvantages</a>",
+                "Very limited expressice power."
+            ],
+            "guid": "B*pI+1fUWK",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Theorem proving</a>",
+                "Applying rules of inference directly to sentences"
+            ],
+            "guid": "HWd^EFUeH3",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Refutation, contradiction</a>",
+                "Show a ⊨ b by proving a AND ¬b is unsatisfiable."
+            ],
+            "guid": "ensDV,$.J0",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Monotonicity</a>",
+                "<div><div><a></a></div></div><div><div>Set of entailed sentences can only increase as information is added to the knowledge base.</div></div>"
+            ],
+            "guid": "wpn.#+FV;p",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Deduction theorem</a>",
+                "<div><div><a></a></div></div><div><div>For any sentence a and b, a entails b iff. (a -&gt; b) is valid.</div><div><br></div><div><br>a entails b iff (a AND NOT b) is unsatisfiable.</div></div>"
+            ],
+            "guid": "b).[xD(:6x",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Completeness</a>",
+                "The property of being able to prove all true things.<br><br><br>An inference algorithm is complete if it can derive any sentences that is entailed."
+            ],
+            "guid": "s>,ZbRqCK!",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Resolution</a>",
+                "Using principle of proof by contradiction to prove entailment."
+            ],
+            "guid": "FA}(m,L.9U",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>CNF</a>",
+                "Conjunctive Normal Form, conjunction of clauses.<br><br><br>Every sentence of PL is logically equivalent to a conjunction of clauses."
+            ],
+            "guid": "Q_tso/M=[G",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Clause</a>",
+                "An expression formed from a finite collection of literals"
+            ],
+            "guid": "fZ:~%.[?co",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Definite clause</a>",
+                "Disjunction of literals with exactly one positive."
+            ],
+            "guid": "gl%Hu0nXtc",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Horn clause</a>",
+                "\"Disjunction\n of literals with at most one positive. Premise is called body and \nconclusion is called head. Single positive literal is called a fact. \""
+            ],
+            "guid": "x(qWsN$l:X",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Goal clause</a>",
+                "Disjunction of literals with none positive."
+            ],
+            "guid": "xWRYf$QUFi",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Forward chaining</a>",
+                "Data-driven. Starts on known data.<br><br><br>Forward chaining for PL: Runs in linear time. Er sound og complete."
+            ],
+            "guid": "f-zp+H~-(S",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Backward chaining</a>",
+                "Goal-directed. Often costs less than forward chaining.<br><br><br>Backward chaining in FOL: <br>Suffers from redundant inferences and infinite loops."
+            ],
+            "guid": "P2IqKQ)zB!",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Fluent</a>",
+                "An aspect of the world that changes. Avhengig av tid."
+            ],
+            "guid": "w3n5`QloZg",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Propositional logic</a>",
+                "<div><div><a></a></div></div><div><div>First order logic without variables and quantifiers. Existence of facts.</div><div><br></div><div><br>Egenskap: Compositionality: Meningen til en setning er en funksjon av delene til setningen.</div></div>"
+            ],
+            "guid": "i0Y0%ru+q2",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>First order logic</a>",
+                "\"First-order\n logic uses quantified variables over non-logical objects and allows the\n use of sentences that contain variables. Existence of objects and \nrelations. \""
+            ],
+            "guid": "Fxr+N}4yI7",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Propositional logic vs. FOL</a>",
+                "PL: eksistens av fakta<br><br>FOL: Kan også uttrykke eksistens av relasjoner og objekter.<br><br><br>Only FOL have quantifiers and predicates. PL are decidible (truth-table)."
+            ],
+            "guid": "m$`@>uNBs2",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Constant symbols</a>",
+                "Objects"
+            ],
+            "guid": "gzNz[V^QRS",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Predicate symbols</a>",
+                "Relations. A predicate takes an entity or entities in the domain of discourse as input while outputs are either True or False."
+            ],
+            "guid": "e0SFJ=k8tu",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Function symbols</a>",
+                "Functions"
+            ],
+            "guid": "yh];9E<?iK",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Term</a>",
+                "Logical expression that refers to an object."
+            ],
+            "guid": "etm)fl1_KH",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Ground term</a>",
+                "<div><div><a></a></div></div><div><div>En term uten variabler.</div></div>"
+            ],
+            "guid": "L;(g!%(3Yk",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Unique-names-assumption</a>",
+                "Every constant symbol refers to a distinct object"
+            ],
+            "guid": "oP|+U!OLzH",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Closed-world-assumption</a>",
+                "Atomic sentences not know to be true are in fact false."
+            ],
+            "guid": "q-^<*BAOmm",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Domain closure</a>",
+                "<div><div><a></a></div></div><div><div>Each model contains no more domain elements than those named by the constant symbol.</div></div>"
+            ],
+            "guid": "ee]sH+0UhI",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Assertion</a>",
+                "Sentences added to the knowledge base using TELL. TELL(KB, King(John))."
+            ],
+            "guid": "EC9{1WHab@",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Queries, goals</a>",
+                "Questions asked with ASK. ASK(KB, Person(John))."
+            ],
+            "guid": "gh2Fi(3I1L",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Knowledge engineering</a>",
+                "<div><div><a></a></div></div><div><div>General process of knowledge-base construction.</div></div>"
+            ],
+            "guid": "oZxRBTh<uG",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Existencial Instantiation</a>",
+                "\"The\n variable is replaced by a single new constant symbol. Can be applied \nonce. The new knowledge base is NOT logically equivalent, but \ninferentially equivalent. \""
+            ],
+            "guid": "s5LG$SN!pH",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Inference in FOL: The new knowledge base is not ... equivalent to the old, but can be shown to be ... equivalent.</a>",
+                "Logically, inferentially"
+            ],
+            "guid": "M@+8xZt/BG",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Generalized Modus Ponens</a>",
+                "Sound inference rule. Lifted version of Modus Ponens."
+            ],
+            "guid": "l4fh>0]V`4",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Unification</a>",
+                "Finding substitutions that make different logical expressions look identical."
+            ],
+            "guid": "xVK,WkXlb1",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Most general unifier</a>",
+                "Unifier that places fewer restrictions on the values of the variables."
+            ],
+            "guid": "eJ*^[(?S`x",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Occur check</a>",
+                "Check whether the variable itself occurs inside the term. If it does, the match fails.<br><br><br>It causes unification of a variable V and a structure S to fail if S contains V."
+            ],
+            "guid": "Eq|jeFEU!G",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Subsumption lattice</a>",
+                "\"Graf \" som viser sentences og unified versions."
+            ],
+            "guid": "om5Z:g!8{(",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Pattern matching</a>",
+                "Finding all possible unifiers such that the premise of a rule unifies with a suitable set of facts in the knowledge base."
+            ],
+            "guid": "m;/4a%nEZi",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Skolemization</a>",
+                "Process of removing existential quantifiers."
+            ],
+            "guid": "B?9_@bQVJT",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Entailment for FOL is semidecidible</a>",
+                "Algorithms exists that say yes to every entailed sentence, but no algorithm exits that say no to every nonentailed sentence."
+            ],
+            "guid": "pD#7WM2[>P",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>First order definite clause</a>",
+                "Disjunction of literals which exactly one positive."
+            ],
+            "guid": "s]+$*_P8-y",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>PL factoring reduces two literals to one if they are ..., FOL factoring reduces two literals to one if the are ....</a>",
+                "Identical, unifiable."
+            ],
+            "guid": "eQ{)Q1YKbJ",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "R<a>efutation-complete</a>",
+                "\"Resolution\n is refutation-complete, which means that if a set of sentences is \nunsatisfiable, then resolution will always be able to derive a \nconclusion. \""
+            ],
+            "guid": "F.t&t}T67Z",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Planning</a>",
+                "Devising a plan of action to acheive one's goal.<br><br><br>Can define planning as a search problemt."
+            ],
+            "guid": "kZv$Bi!*AK",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Factored representation</a>",
+                "<div><div><a></a></div></div><div><div>A state of the world is represented by a collection of variables<br><br><br>Atomic - Søk</div><div><br>Factored - CSP, PL</div><div><br>Structured - FOL, Natural</div></div>"
+            ],
+            "guid": "P*C/Zzs.9T",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>PDDL</a>",
+                "<div><div><a></a></div></div><div><div>Planning Domain Definition Language. <br>Precond/effect <br><br><br>Basic PDDL does not have a universal quantifier.</div></div>"
+            ],
+            "guid": "zTRb>8I0~G",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>STRIPS vs PDDL</a>",
+                "STRIPS har ADD- and DELETE-list."
+            ],
+            "guid": "loWjc$K&=D",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Propositionalize</a>",
+                "Replace each action schema with a set of ground actions and use a propositional solver to find a solution."
+            ],
+            "guid": "vKXOE`BD<",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>PlanSAT</a>",
+                "Exists there any plan that solves a planning problem?"
+            ],
+            "guid": "dq_-4}HYU}",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Bounded PlanSAT</a>",
+                "Is there a solution of lenght k or less?"
+            ],
+            "guid": "Q&S5RYjnF+",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Forward state-space search</a>",
+                "Use informed search or local search to solve. Progression. <br><br>Chose applicable actions. <br><br><br>Exploring irrelevant actions and large state space."
+            ],
+            "guid": "PXrM4y}!0[",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Backward relevant-states search</a>",
+                "Regression. Start at goal and apply actions backwards.<br><br><br>Want only relevant actions. <br><br>Hard to come up with good heuristics."
+            ],
+            "guid": "w@Vu41jIc6",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Ignore preconditions heuristic</a>",
+                "Add edges to the graph. Drops all preconditions from actions."
+            ],
+            "guid": "QZlhE-`UCb",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Ignore delete list heuristic</a>",
+                "Assume that all goals and preconditions only contanis posistive literals."
+            ],
+            "guid": "Hr(eK}N*I^",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Persistence action</a>",
+                "No-op. A literal can persist if no action negates it."
+            ],
+            "guid": "lR4R4{QpX;",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Planning graphs work only for ... planning problems.</a>",
+                "Propositional (ones with no variables)."
+            ],
+            "guid": "l%e!Fuw6^k",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Mutex propositions:</a>",
+                "• One is negating the other<br><br>• Inconsistent support (all ways of achieving them are pairwise mutex)"
+            ],
+            "guid": "Prce[2PKI?",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Mutex actions if:</a>",
+                "<div><div><a></a></div></div><div><div>• Inconsistent effects (negated hverandres effekt)</div><div><br>• Interference (negates a precondition)</div><div><br>• Competing needs (mutex preconditions)</div></div>"
+            ],
+            "guid": "K;Br^R,WlY",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Leveled off</a>",
+                "Alternating between A_i and S_i until we reach a point where to consecutive levels are identical.<br><br><br>The\n last state must include all goals in the goal state without mutex links\n and when back searching, actions without mutex links, and chain back to\n initial state."
+            ],
+            "guid": "Jc^plc:U;t",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Serial planning graph</a>",
+                "\"Insists\n that only one action can occur at any given time stop. This is done by \nadding mutex links between every pair of non persistence actions. \""
+            ],
+            "guid": "HHbJA!2I,2",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Level sum heuristic</a>",
+                "Assumes subgoals are independent. Returns the sum of the level costs of the goals. Might be inadmissible."
+            ],
+            "guid": "v{koQSaK/W",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Set-level heuristic</a>",
+                "Finds level which all the literals in conjunctive goal appear in the planning graph without any pair of them being mutex."
+            ],
+            "guid": "Q4ZxaHrfaE",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>GraphPlan algorithm</a>",
+                "Repeatedly\n adds a level to a planning graph, calls ExtractSolution (kan \nformulerers som CSP eller backward search) to see if solution exists. If\n not, new level.<br><br><br>Extracts solution from planning graph."
+            ],
+            "guid": "F^Fhy/+2/?",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Situation calculus</a>",
+                "Avhengig av tid også."
+            ],
+            "guid": "hXGa>yGIuP",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Scheduling</a>",
+                "Inkluderer temporal and resource constraints."
+            ],
+            "guid": "K0?(m1GrA$",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Sensorless planning</a>",
+                "<div><div><a></a></div></div><div><div>Conformant planning. Environments with no observations. Switch to open-world assumption.</div></div>"
+            ],
+            "guid": "t?J[q^a1Dw",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Contingency planning</a>",
+                "Partially observable and nondeterministic environments."
+            ],
+            "guid": "gk*w}mjiT)",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Ontological engineering</a>",
+                "Representing abtract concepts such as events, time and beliefs."
+            ],
+            "guid": "j3zLhzcB=e",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Exhaustive decomposition</a>",
+                "Parition."
+            ],
+            "guid": "g&2/O=)R9r",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Composite objetcs</a>",
+                "Characterized by structural relationships among parts."
+            ],
+            "guid": "o-S_|wMFGk",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Semantic networks</a>",
+                "<div><div><a></a></div></div><div><div>A form of logic. A knowledge base that represents semantic relations between concepts in a network.</div></div>"
+            ],
+            "guid": "w!;`W:j^a`",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Inheritance</a>",
+                "Inherit properties. Main inference mechanism in semantic networks."
+            ],
+            "guid": "FWJH5u.AI6",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Multiple inheritence</a>",
+                "Object can belong to more than one category."
+            ],
+            "guid": "qp>,h9Jg3*",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Description logics</a>",
+                "Notations that are designed to make it easier to describe definitions and properties of categories."
+            ],
+            "guid": "M;D1~i2qEy",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Circumscription</a>",
+                "<div><div><a></a></div></div><div><div>\"More\n powerful and precise version of closed-world assumption. False for \nevery object, except those for which they are known to be true.\"<br><br><br>Allows the entailed sentences to be removed after new sentences added to the KB.</div></div>"
+            ],
+            "guid": "lYlW27o_n^",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>States and goals in STRIPS</a>",
+                "States: First order predicates over objects. Goals: Conjunctin of literals"
+            ],
+            "guid": "IH}?U-w}8I",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Intrinsic vs. extrinsic</a>",
+                "Indre vs. kvantitative (bevares ikke hvis du deler objektet)"
+            ],
+            "guid": "DcxnSdk|KQ",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Stuff vs. things</a>",
+                "Things kan telles"
+            ],
+            "guid": "r?8Knz}>Lz",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Representere kategorier</a>",
+                "1. Semantiske nettverk (grafisk)<br><br>2. Description logic (formal languge)"
+            ],
+            "guid": "utWB.`!*Y>",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Procedural attachment</a>",
+                "Spørring for noen relasjoner kaller en spesiell, egendefinert prosedyre."
+            ],
+            "guid": "t(_WKU6b|T",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>IE vs. IR</a>",
+                "\"Information\n extraction is about acquiring knowledge from documents, whereas \ninformation retrieval is about finding the relevant documents given a \nquery. The former builds upon the results of the latter.\""
+            ],
+            "guid": "CZ0Qw`Ofy1",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Limiting factor in IE</a>",
+                "\"The\n actual natural language processing, currently there does not exist an \nAI that understands text on a human level, in particular when it comes \nto ambiguity.\""
+            ],
+            "guid": "DeXd@bD_f/",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Sussman anomaly</a>",
+                "Skal plassere klosser på hverandre (A, B, C), får ikke til dette hvis man først setter A på B."
+            ],
+            "guid": "lZzc:r]Ep",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Total vs. partial order planning</a>",
+                "Total order: Plan is always a strict sequence of actions<br><br><br>Partial order: Plan steps may be unordered"
+            ],
+            "guid": "B8>(#v;Q7p",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Pareto Optimality</a>",
+                "A distribution of things such that no one can be made better off without someone becoming worse off"
+            ],
+            "guid": "j1u^Mq)3f<",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Social welfare values</a>",
+                "<div><div><a></a></div></div><div><div>- Sum of utilities of all agents for this strategy profile</div><div><br>- If a solution maximizes social welfare, then the available utilities are not wasted</div></div>"
+            ],
+            "guid": "CX+zWC{j`e",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Contract Net Protocol</a>",
+                "protocol used for Task Sharing/Allocation"
+            ],
+            "guid": "fRmfMn1p?/",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Simultaneous/strategic normal form games</a>",
+                "Represented as a payoff matrix<br><br><br>The agent chooses its strategy only once at the beginning of the game, and all agents take actions simultaneously.<br><br><br>Main issue: predict what other agent(s) will play"
+            ],
+            "guid": "eR6)/-8q39",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Sequential games</a>",
+                "players make decisions one after another, so one player responds to the known decisions of other players<br><br><br>Represented as a tree<br><br>At each point the agent may decide/change their strategy"
+            ],
+            "guid": "xVOnS`4PO=",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Repeated games</a>",
+                "Focus: remembering past behavior of other strategies based on past behavior of other agents."
+            ],
+            "guid": "En4:&]()#q",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Strongly dominant strategy</a>",
+                "An action is strictly dominant if it strictly dominates every action in Ai.<br><br><br>A dominant action must be unique, and when it exists, a rational agent will choose it."
+            ],
+            "guid": "w^VmvMv*)a",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Strongly dominant equilibrium</a>",
+                "Strategy where all the agents choose the strictly dominant action."
+            ],
+            "guid": "rn6]a$!8u;",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Weakly dominant strategy</a>",
+                "Strategy that earns a payoff at least as high as any other and strictly dominant for some profile of other player's strategies<br><br><br>if it is at least as good for a player to follow no matter what strategy other players choose"
+            ],
+            "guid": "sANgklK&p6",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>Social welfare maximization</a>",
+                "- Sum of utilities of all agents for this strategy profile.<br><br>- If a solution maximizes social welfare (i.e., social optimum), then the available utilities are not wasted."
+            ],
+            "guid": "P9{o9:42V,",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<a>The tree search version of A* is ... if h(n) is .... <br>While the graph search version is ... optimal if h(n) is ....</a>",
+                "Optimal, admissible<br>Optimal, consistent"
+            ],
+            "guid": "n`Uf[wv=(F",
+            "note_model_uuid": "04e0564e-4155-11ed-a206-31bf9b4e6d91",
+            "tags": []
+        }
+    ],
+    "reviewLimit": null,
+    "reviewLimitToday": null
+}
